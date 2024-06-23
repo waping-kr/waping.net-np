@@ -1,0 +1,2151 @@
+
+.wrap *{
+
+}
+
+.header{
+    position: relative;
+    background: #fff;
+    border-bottom: 3px solid #001530;
+}
+.header::before{position: absolute; left: 0; top: 82px; content: ''; width: 100%; height: 1px; background-color: #E2E6F1;}
+@media all and (max-width:1024px){
+    .header::before{display: none;}
+    .header{
+        border-bottom: 1px solid #E1E1E1;
+    }
+}
+.header__top{
+    padding-top:29px;
+}
+.header__top .logo a{
+    float:left;
+    width:206px;
+    height:41px;
+    background:url(https://cdn.jsdelivr.net/gh/waping-kr/waping.net-np/assets/img/logo.svg) no-repeat;
+}
+.header__top .logoSub{
+	display:inline-block;
+	height:41px;
+}
+.header__title{
+    float:left;
+    /*margin:5px 0 0 22px;*/
+    width:263px;
+    height:31px;
+}
+.header__memu{
+    float:right;
+}
+.header__menu--list{
+    float:left;
+    margin-top:15px;
+}
+.header__menu--list li{
+    float:left;
+    margin-left:20px;
+}
+.header__menu--list li:first-child{
+    margin-left:0;
+}
+.header__menu--list li a{
+    color:#000;
+}
+.header__search{
+    position:relative;	
+    float:left;
+    margin-left:30px;
+    width:250px;
+    border-bottom:1px solid #000;
+}
+.header__search input[type="text"]{
+    padding:9px 10px 6px 2px;
+    width:calc(100% - 38px);
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+}
+.header__search input::-webkit-input-placeholder {
+    color: #555;
+}
+.header__search input::-moz-placeholder {
+    color:#555;
+}
+
+.btn__search{
+    position:absolute;
+    right:0;
+    bottom:6px;
+    width:28px;
+    height:28px;
+    background:url(https://www.pipc.go.kr/np/resources/images/common/i_search.svg) center 50% no-repeat;
+}
+.controll__box{
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+.controll__box>dl{
+    margin-left: 10px;
+}
+.resetText{color: #fff; font-weight: 500;}
+.resetText>span{display: inline-block; margin-left: 2px;color: #fff; font-weight: 100; opacity: 0.8;}
+
+.btn__size--up,
+.btn__size--down{
+    position:relative;
+    width:30px;
+    height:30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 3px;
+}
+.btn__size--down{
+    margin-left:5px;
+}
+.btn__size--up:before,
+.btn__size--down:before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:10px;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.btn__size--up:before{
+    height:10px;
+    background:url(https://www.pipc.go.kr/np/resources/images/common/i_size_up.png) no-repeat;
+}
+.btn__size--down:before{
+    height:2px;
+    background:url(https://www.pipc.go.kr/np/resources/images/common/i_size_down.png) no-repeat;
+}
+.mobile__menu{
+    display: none;
+}
+.topBanner{
+	background: #002B65 0% 0% no-repeat padding-box;
+}
+.top_container{
+    max-width:1400px;
+    margin:0 auto;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.topBanner__tit{
+	color: #fff;
+    font-weight: 300;
+	/*font-size: 13px;*/
+	/*letter-spacing:-1px;*/
+}
+.topBanner__tit i{
+	display: inline-block;
+	margin-right: 15px;
+}
+.topBanner__tit img{
+	vertical-align: middle;
+}
+.topBanner__right{
+    display: flex;
+}
+.topLanguage_box{
+    display: flex;
+    align-items: center;
+}
+.btn_home{display: block; width: 60px; height: 60px; background: #D3B000 url("https://www.pipc.go.kr/np/resources/images/common/icon_home.svg") center 50% no-repeat; border-right: 1px solid rgba(255,255,255,.2); margin-right: 20px;}
+.icon_global_01{width: 20px; height: 20px; background: url("https://www.pipc.go.kr/np/resources/images/common/icon_global_01.svg") center 50% no-repeat; margin-right: 5px; position: relative;}
+.topLanguage_box a{
+    font-size: 15px;
+    font-weight: 200;
+    color: #fff;
+    opacity: 0.7;
+    letter-spacing: -1.05px;
+}
+.lan_txt{margin-right: 21px; position: relative;}
+.icon_global_01::before{position: absolute; right: -45px; top: 2px; width: 1px; height: 100%; content: ''; background: url(https://www.pipc.go.kr/np/resources/images/common/icon_line_01.svg) center 50% no-repeat;}
+
+.topLanguage_box a.active{
+    font-weight: 500;
+    opacity: 1;
+}
+.topLanguage_box a:hover{color: #FFD800;opacity: 1;}
+
+.topLanguage_box a.active:hover{color: #fff;opacity: 0.8;}
+
+@media all and (max-width: 375px){
+    .topBanner__tit{ font-size: 13px;}
+}
+@media all and (max-width: 768px){
+}
+@media all and (max-width:1024px){
+    .topBanner__right{display: none;}
+    .btn__search{bottom:10px; right: 5px; width:28px; height:28px;}
+}
+@media all and (max-width: 1399px){
+    .top_container{margin: 0 10px;}
+}
+
+@media all and (max-width: 320px){
+	.topBanner__tit i{
+		margin-right: 7px;
+	}
+}
+
+
+ /* gnb */
+ .mobileTop{
+     display: none;
+ }
+.header__gnb{
+    padding: 34px 0 22px
+}
+.navListBox .navListArea{
+    display: none;
+    position: absolute;
+    top:162px;
+    left:0;
+    width: 100%;
+    padding: 30px 0;
+    border-top: 3px solid #002B65;
+    border-bottom: 1px solid #E0E0E0;
+    z-index: 9999;
+    background: #fff;
+}
+
+.navListBox{
+    position: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+.navListBox > li{
+    float: left;
+}
+
+.navListBox > li > a{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #202020;
+}
+.mu_sitemap{width: 36px; height: 36px; background: url("https://www.pipc.go.kr/np/resources/images/common/icon_sitemap.svg") center 50% no-repeat;}
+.mu_sitemap:hover{background: url("https://www.pipc.go.kr/np/resources/images/common/icon_sitemap_ov.svg") center 50% no-repeat;}
+/* 텍스트 오버 컬러 */
+.navListBox > li > a:hover,
+.navListBox > li > a:focus,
+.navListBox > li > a.active{
+    color: #FFD800;
+}
+/* 텍스트 오버 컬러 */
+.navListBox > li > a.active:after,
+.navListBox > li > a:hover:after,
+.navListBox > li > a:focus:after{
+    content:'';
+    position: absolute;
+    bottom:-25px;
+    left:0;
+    width: 100%;
+    height: 3px;
+    background: #FFD800;
+    z-index: 99999;
+}
+.navListBox > li:last-child > a.active:after,
+.navListBox > li:last-child > a:hover:after,
+.navListBox > li:last-child > a:focus:after{
+    display: none !important;
+}
+.navListBox a.siteNew {
+	background: url(https://www.pipc.go.kr/np/resources/images/common/outB.png) 98% 12px no-repeat; 
+	padding-right: 35px; 
+	padding-top: 7px;
+	box-sizing: border-box;
+}
+
+.subNavSlide a.siteNew {
+	background: url(https://www.pipc.go.kr/np/resources/images/common/outB.png) 98% 12px no-repeat; 
+	padding-right: 35px; 
+	padding-top: 7px;
+	box-sizing: border-box;
+}
+
+
+.gnb_sub_menu_box{display: flex;}
+.gnb_sub_menu_img_box{
+    width: 250px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 250px;
+}
+.gnb_sub_menu_img_box .sub_txt_box{}
+.gnb_sub_menu_img_box .sub_title_txt{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.gnb_sub_menu_img_box p{
+    max-width: 160px;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: -1px;
+    font-weight: 300;
+    color: #666;
+}
+.gnb_sub_menu_img_01{height: 170px; background: url("https://www.pipc.go.kr/np/resources/images/common/gnb_sub_menu_img_01.svg") 0 bottom no-repeat;}
+.gnb_sub_menu_img_02{height: 170px; background: url("https://www.pipc.go.kr/np/resources/images/common/gnb_sub_menu_img_02.svg") 0 bottom no-repeat;}
+.gnb_sub_menu_img_03{height: 170px; background: url("https://www.pipc.go.kr/np/resources/images/common/gnb_sub_menu_img_03.svg") 0 bottom no-repeat;}
+.gnb_sub_menu_img_04{height: 170px; background: url("https://www.pipc.go.kr/np/resources/images/common/gnb_sub_menu_img_04.svg") 0 bottom no-repeat;}
+.gnb_sub_menu_img_05{height: 170px; background: url("https://www.pipc.go.kr/np/resources/images/common/gnb_sub_menu_img_05.svg") 0 bottom no-repeat;}
+.gnb_sub_menu_img_06{height: 170px; background: url("https://www.pipc.go.kr/np/resources/images/common/gnb_sub_menu_img_06.svg") 0 bottom no-repeat;}
+
+
+/* gnb depth 2 */
+.gnbList{
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+.gnbList > li{
+    width: 260px;
+    margin: 0 20px 30px 0;
+}
+
+.gnbList > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    height: 35px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+}
+.gnbList > li > a:hover{
+    border: 1px solid #FFD800;
+}
+.gnbList > li > ol{
+    margin: 20px 10px 0;
+}
+.gnbList > li > ol > li{
+    margin-top: 10px;
+}
+.gnbList > li > ol > li > a{
+    font-size: 16px;
+    color: #303030;
+    line-height: 110%;
+    padding-top: 7px;
+    word-break: keep-all;
+}
+.gnbList > li > ol > li > a:hover,
+.gnbList > li > ol > li > a:focus{
+    color: #FFD800;
+    text-decoration: underline;
+}
+
+@media all and (max-width:1024px){
+    .navListArea>.container{padding:0;}
+    .gnb_sub_menu_img_box{display: none;}
+    .gnbList{flex-direction: column;}
+    .gnbList > li{width: 100%; margin: 0;}
+}
+
+.quick_link_box{max-width: 1400px; margin: 45px auto 60px; display: flex; align-items: center;}
+.quick_title_box{flex: 0 0 200px; align-items: center;}
+.quick_title{max-width: 135px; font-size: 26px; font-weight: 900; color: #303030;letter-spacing: -2.6px; margin-bottom: 5px;}
+.quick_txt{max-width: 135px; font-size: 20px; font-weight: 300; color: #303030;letter-spacing: -2px; line-height: 120%;}
+.quick_list_box{display: flex; justify-content: space-around; flex: 1 1 auto;}
+.quick_list_box>li{margin: 0 5px;}
+.quick_list_box>li>a{display: block; text-align: center; line-height: 120%;}
+.quick_list_box>li>a>p{word-break: keep-all; font-size: 16px; text-align: center; line-height: 120%;}
+.quick_list_box>li>a>span{display: inline-block; width: 100px; height: 100px; margin-bottom: 15px; background-color: #F6F6F9; border-radius: 30px;}
+.icon_quick_01{background: url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_d_01.svg") center 50% no-repeat;}
+.quick_list_box>li>a:hover .icon_quick_01{background: #002B65 url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_o_01.svg") center 50% no-repeat;}
+.icon_quick_02{background: url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_d_02.svg") center 50% no-repeat;}
+.quick_list_box>li>a:hover .icon_quick_02{background: #002B65 url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_o_02.svg") center 50% no-repeat;}
+.icon_quick_03{background: url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_d_03.svg") center 50% no-repeat;}
+.quick_list_box>li>a:hover .icon_quick_03{background: #002B65 url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_o_03.svg") center 50% no-repeat;}
+.icon_quick_04{background: url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_d_04.svg") center 50% no-repeat;}
+.quick_list_box>li>a:hover .icon_quick_04{background: #002B65 url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_o_04.svg") center 50% no-repeat;}
+.icon_quick_05{background: url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_d_05.svg") center 50% no-repeat;}
+.quick_list_box>li>a:hover .icon_quick_05{background: #002B65 url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_o_05.svg") center 50% no-repeat;}
+.icon_quick_06{background: url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_d_06.svg") center 50% no-repeat;}
+.quick_list_box>li>a:hover .icon_quick_06{background: #002B65 url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_o_06.svg") center 50% no-repeat;}
+.icon_quick_07{background: url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_d_07.svg") center 50% no-repeat;}
+.quick_list_box>li>a:hover .icon_quick_07{background: #002B65 url("https://www.pipc.go.kr/np/resources/images/common/icon_quick_o_07.svg") center 50% no-repeat;}
+@media all and (max-width:1024px){
+    .quick_link_box{display: none;}
+}
+
+/* contents */
+.section_group_box{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.section_group_box::after{
+    content:''; display:block; clear:both;
+}
+.mainVisual{
+    position: relative;
+    max-width: 660px;
+    float: left;
+    width: calc(50% - 20px);
+    overflow: hidden;
+}
+.mainVisual .section_title_box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.section_title_box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.section_title_box>h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: #303030
+}
+.mainVisual .swiper-container{
+	padding-bottom:35px;
+    overflow: hidden; 
+    padding: 0;
+    /* width: 2560px;
+    margin-left: -1280px; */
+}
+@media all and (max-width: 1480px) {
+    .section_group_box, .quick_link_box{padding: 0 30px;}
+}
+@media all and (max-width: 1299px) {
+    .mainVisual .swiper-container{
+        left:0;
+        margin-left: 0;
+    }
+}
+.mainSwiper::before{
+    display: block;
+    content: '';
+    height: 55px;
+}
+.mainSwiper .swiper-slide{
+    position: relative;
+    max-width: 660px;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    /* padding: 0 50px; */
+    /* width: 1200px !important; */
+}
+.mainSwiper .swiper-slide a{
+    display: block;
+    /* max-width: 900px; */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* .mainSwiper .swiper-slide:first-child{
+    margin-left: 100px;
+}
+.mainSwiper .swiper-slide a figure{
+    
+} */
+.swiper-slide .figureCaption{
+    width: 100%;
+    padding: 20px 35px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.6);
+    transition: .2s;
+    -webkit-transition: .2s;
+}
+.swiper-slide .figureCaption .text__large{font-size: 20px; color: #fff; line-height: 110%; font-weight: 500;}
+.swiper-slide .figureCaption .text__title{font-size: 15px; color: #fff; line-height: 120%; font-weight: 300;}
+.figureCaption.typeB{
+    width: 100%;
+    padding: 30px 40px 10px;
+    left:0;
+    bottom:0;
+}
+
+.swiper-slide.swiper-slide-active .figureCaption{
+    opacity: 1;
+}
+.swiper-slide .figureCaption .text__title>strong{
+    color: #fff;
+    font-weight: 600;
+}
+
+.swiper__option{
+    font-size: 0;
+    display: flex;
+    align-items: center;
+}
+.swiper-pagination-dot{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.swiper__option .swiper-pagination-bullet{
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    background: #B0B0B0;
+    opacity: 1;
+    color: transparent;
+    transition: .2s;
+    -webkit-transition: .2s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.swiper__option .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width: 40px;
+    background: #FFD800;
+    border-radius: 10px;
+    -webkit-border-radius :10px;
+}.swiper__controll{
+    margin-left: 15px;
+    display: flex;
+}
+.swiper__option .swiper__stop{
+    width: 13px;
+    height: 13px;
+    background: url(https://www.pipc.go.kr/np/resources/images/index/slide_pause.svg) center 50% no-repeat;
+    background-size: contain;
+}
+.swiper__option .swiper__play{
+    width: 13px;
+    height: 13px;
+    background: url(https://www.pipc.go.kr/np/resources/images/index/slide_play.svg) center 50% no-repeat;
+    background-size: contain;
+}
+.totalPage{
+    font-size: 14px;
+}
+.totalPage,
+.totalPage span{
+    display: inline-block;
+}
+.page_number{
+    font-size: 18px;
+}
+.totalNun{
+    font-size: 18px;
+}
+
+
+.section_right_box{max-width: 655px; float: right; width: calc(50% - 20px);}
+.ByTarget_box{}
+.ByTarget_list{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.ByTarget_list>li{width: calc(50% - 8px); margin-bottom: 10px;}
+.ByTarget_list>li>a{position: relative; display: block; border: 1px solid #DDE1EC; background-color: #fff; height: 134px; border-radius: 20px; padding: 20px 30px;}
+.ByTarget_list>li>a:hover{border: 1px solid #FFD800; background-color: #fff;}
+.ByTarget_list>li>a:hover .Target_title{color: #FFD800;}
+.Target_title{font-size: 26px; min-width: 90px; line-height: 120%; letter-spacing: -1px; padding: 5px 0 15px 0; font-weight: 600; text-align: left;}
+.Target_txt{font-size: 16px; font-weight: 300; word-break: keep-all; line-height: 120%; max-width: 140px;}
+.ByTarget_list>li>a>.icon_li_s{position: absolute; right: 30px; bottom: 20px;}
+
+@media all and (max-width:1280px){
+    .ByTarget_list>li>a {justify-content: center;align-items: flex-start;flex-direction: column;}
+    .Target_title{font-size: 22px; min-width: 100%; padding: 0;}
+    .Target_txt{font-size: 15px; letter-spacing: -1px; max-width: 100%; margin-right: 0; margin-top: 5px;}
+}
+
+.Youtube_box{max-height: 180px; padding: 15px 20px; background-color: #FFFFFF; box-shadow: 10px 10px 30px rgba(0,0,0,.1); border-radius: 20px; margin-top: 25px;}
+.Youtube_box:hover{box-shadow: 10px 10px 30px rgba(0,0,0,.2);}
+.Youtube_box:hover .youtube_title{color: #FFD800;}
+.Youtube_box>a{display: flex; justify-content: space-between;}
+.youtube_left{max-width: 50%; margin: 10px 20px 10px 10px; display: flex; flex-direction: column; justify-content: space-between;}
+.youtube_title{font-size: 22px; color: #585858; font-weight: 600; line-height: 100%; max-width: 100%; display:inline-block; text-overflow:ellipsis; overflow:hidden; white-space:nowrap}
+.youtubet_txt{font-size: 18px; color: #888888; font-weight: 300; line-height: 110%; margin: 5px 0; max-width: 100%; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.youtubet_more{font-size: 14px; color: #888888; font-weight: 300;}
+.youtube_right{}
+.youtube_s_img{max-width: 265px; max-height: 150px; overflow: hidden; }
+.youtube_s_img>img{max-width: 100%; border-radius: 10px;}
+
+.GDPR_box{float: right; max-width: 655px; padding-top: 25px; width: calc(50% - 20px);}
+.GDPR_list_box{display: flex; justify-content: space-around;}
+.GDPR_list_box>li{width: 16.6666666%;}
+.GDPR_list_box>li>a{display: block; text-align: center; line-height: 120%; margin: 0 5px;}
+.GDPR_list_box>li:first-child>a{margin-left: 0;}
+.GDPR_list_box>li:last-child>a{margin-right: 0;}
+.GDPR_list_box>li>a>p{word-break: keep-all; font-size: 16px; text-align: center; line-height: 120%;}
+.GDPR_list_box>li>a>span{display: inline-block; max-width: 100px; width: 100%; height: 90px; margin-bottom: 5px; background-color: #55BF8F; border-radius: 12px; background-size: 55%;}
+.GDPR_list_box>li>a:hover>span{background-color: #809CCC;}
+.icon_GDPR_01{background: url("https://www.pipc.go.kr/np/resources/images/index/icon_GDPR_01.svg") center 50% no-repeat;}
+.icon_GDPR_02{background: url("https://www.pipc.go.kr/np/resources/images/index/icon_GDPR_02.svg") center 50% no-repeat;}
+.icon_GDPR_03{background: url("https://www.pipc.go.kr/np/resources/images/index/icon_GDPR_03.svg") center 50% no-repeat;}
+.icon_GDPR_04{background: url("https://www.pipc.go.kr/np/resources/images/index/icon_GDPR_04.svg") center 50% no-repeat;}
+.icon_GDPR_05{background: url("https://www.pipc.go.kr/np/resources/images/index/icon_GDPR_05.svg") center 50% no-repeat;}
+.icon_GDPR_06{background: url("https://www.pipc.go.kr/np/resources/images/index/icon_GDPR_06.svg") center 50% no-repeat;}
+
+@media all and (max-width:1024px){
+    .section_group_box{margin-top: 30px; padding: 0 10px}
+    .mainSwiper .swiper-slide {border-radius: 20px; max-height:377px;}
+    .ByTarget_list>li>a{border-radius: 10px; height: 95px;}
+    .Youtube_box {border-radius: 10px;}
+    .GDPR_box{clear: both; display: block; float:inherit; max-width: 100%; width: 100%; padding-top: 60px;}
+    .mainVisual {width:calc(50% - 2px);}
+    .mainVisual .section_title_box {padding:0 10px;}
+}
+@media all and (max-width:1023px){
+    .ByTarget_list>li>a{padding: 15px 20px;}
+    .ByTarget_list>li>a>.icon_li_s{display: none;}
+}
+
+@media all and (max-width:900px){
+    .section_title_box>h2 {font-size: 24px;}
+    .youtubet_more{display: none;}
+}
+@media all and (max-width: 768px) {
+    .section_title_box>h2 {font-size: 22px; font-weight: 600;}
+    .mainSwiper .swiper-slide{border-radius: 10px; max-height:520px;}
+    .Youtube_box {padding: 10px; margin-top: 7px;}
+    .youtube_left {margin: 0 20px 0 10px;}
+}
+@media all and (max-width: 767px) {
+    .mainVisual{float: inherit; width: 100%; max-width: 100%; margin: 0 auto;}
+    .mainVisual .swiper-container{display: flex; flex-direction: column-reverse;}
+    .swiper__option .swiper-pagination-bullet{width: 16px; height: 16px; margin-left: 10px;}
+    .mainVisual .section_title_box>h2{display: none;}
+    .mainVisual .section_title_box {position: static; justify-content: flex-end; margin: 15px 20px 0 0;}
+    .section_group_box{margin: 0; padding: 0;}
+    .ByTarget_list>li>a{border-radius: 10px; padding: 20px 30px;}
+    .mainVisual .swiper-container{padding: 0 !important;}
+    .mainSwiper .swiper-slide{max-height: 100%; max-width: 100%; border-radius: 0;}
+    .section_right_box{float: inherit; width: 100%; max-width: 100%; margin-top: 40px; padding: 0 10px;}
+    .GDPR_box{padding: 40px 20px 0;}
+    .Youtube_box{padding: 20px;}
+    .youtube_left{margin: 20px 0;}
+    .youtubet_more {display: block;}
+}
+
+@media all and (max-width: 480px) {
+    .ByTarget_list{flex-direction: column;}
+    .ByTarget_list>li{width: 100%;}
+    .ByTarget_list>li>a{display: flex; justify-content: flex-start; align-items: center; height: 60px; border-radius: 10px; padding: 0 20px; flex-direction: row;}
+    .Target_title{font-size: 24px; min-width: 90px; line-height: 120%; letter-spacing: -1px; padding: 0 10px; font-weight: 600; text-align: left;}
+    .Target_txt{font-size: 16px; font-weight: 300; line-height: 120%; margin-right: 0px;}
+
+    
+    .GDPR_list_box {flex-wrap: wrap;}
+    .GDPR_list_box>li {width: 30%; margin-bottom: 10px;}
+    .Youtube_box{max-height: none;}
+    .Youtube_box>a {flex-direction: column-reverse;}
+    .youtube_left {max-width: 100%; margin-bottom: 0;}
+    .youtubet_txt { margin: 10px 0; line-height: 120%;}
+    .youtube_s_img {max-width: 100%;max-height: 100%;}
+}
+
+/*홈 게시판 탭*/
+.boardWrap{margin: 90px 0 40px 0;}
+.board_flex_box{display: flex; justify-content: space-between;}
+.board_flex{width: calc(50% - 40px); position: relative;}
+.board_tabs{margin: 0px; padding: 0; list-style: none; display: flex;}
+.board_tabs>li{margin-right: 10px;}
+.board_tabs>li>a, .btn_board_title_01{display: inline-block; border: 1px solid #ebebeb; background-color: #ebebeb; border-radius: 40px; padding: 0 30px; color: #505050; height: 50px; line-height: 50px; font-size: 20px; font-weight: 500; text-align: center;}
+.board_tabs li>a:hover{border-color: #002B65; background-color: #fff; color: #000;}
+.btn_board_title_01.current{border-color: #002B65; background-color: #002B65; color: #fff;}
+.board_tabs li.current>a{border-color: #002B65; background-color: #002B65; color: #fff;}
+.board_tab_con{display: none; font-size: 18px; font-weight: 400; padding: 20px 0 40px 0;}
+.board_tab_con.current{display: inherit; overflow: hidden;}
+.board_con_box{overflow: hidden; padding: 0;}
+.board_tab_con h2{display: inline-block; border: 1px solid #002B65; background-color: #002B65; border-radius: 40px; padding: 0 30px; color: #fff; height: 50px; line-height: 50px; font-size: 20px; font-weight: 500; text-align: center;}
+.btn_more_plus{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url("https://www.pipc.go.kr/np/resources/images/common/btn_icon_more.svg") center 50% no-repeat;
+}
+.on{display: block;}
+.ed_list_noitem.on{display: flex;}
+.ed_list_noitem{
+    display: none;
+    margin: 20px 0;
+    border: 1px solid #dadee8;
+    border-radius: 5px;
+    background-color: #f6f6f9;
+    justify-content: center;
+    align-items: center;
+    min-height: 165px;
+    font-size: 18px;
+    color: #999;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.ed_list_noitem>span{
+    display: flex;
+    border: 1px solid #dadee8;
+    border-radius: 20px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #999;
+    margin-right: 20px;
+}
+.el_iconTxt {
+	display: inline-flex;
+	overflow: hidden;
+	width: 18px;
+	height: 16px;
+	border-radius: 2px;
+	background: #FFD800;
+    line-height: 10px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 13px;
+	align-items: center;
+	justify-content: center;
+}
+.bl_mainArticle_item {
+	display: flex;
+	margin: 10px 0;
+	justify-content: space-between;
+}
+
+.bl_mainArticle_date {
+	color: #909090;
+	text-align: right;
+	font-weight: 300;
+	font-size: 16px;
+	flex: 0 0 100px;
+}
+
+.bl_mainArticle_subject {
+	display: flex;
+	overflow: hidden;
+	color: #505050;
+	font-size: 20px;
+	align-items: center;
+}
+
+.bl_mainArticle_subject:hover strong {
+	color: #ED375D
+}
+
+.bl_mainArticle_subject .el_iconTxt {
+	margin-top: 2px;
+	margin-left: 5px;
+	flex: 0 0 16px;
+}
+
+
+.bl_mainArticle_subject strong {
+	font-weight: 400;
+    font-size: 18px;
+}
+
+@media all and (max-width: 1024px){
+    .boardWrap>.container{padding: 0 20px;}
+}
+@media all and (max-width: 767px) {
+    .board_flex_box {flex-direction: column;}
+    .board_flex{width: 100%;}
+}
+
+
+
+/* sec 2 */
+.shortCutMenu{
+    padding: 150px 0 135px;
+}
+.shortCutMenu ul{
+    margin-left: -40px;
+}
+.shortCutMenu ul > li{
+    float: left;
+    padding-left: 40px;
+    width: 25%;
+}
+
+.shortCutMenu__link{
+    display: block;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+.shortCutMenu__link:hover,
+.shortCutMenu__link:focus{
+    border: 1px solid #000;
+}
+
+.shortCutMenu__top{
+    position: relative;
+    padding: 30px 0 10px;
+    height: 53px;
+}
+.icon__more{
+    position: absolute;
+    right:10px;
+    bottom: 10px;
+    width: 13px;
+    height: 13px;
+    background: url(https://www.pipc.go.kr/np/resources/images/index/icon_more.png) no-repeat;
+}
+.shortCutMenu__inner{
+    position: relative;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+}
+.shortCutMenu__inner .text__mid{
+    margin-top: 20px;
+    padding-right: 20px;
+    height: 45px;
+    line-height: 1.4;
+}
+.shortCutMenu__img{
+    margin-top: 10px;
+}
+.shortCutMenu__img img{
+    width: 100%;
+}
+/* .shortCutMenu__inner--img01:after{
+    content:'';
+    background: url(https://www.pipc.go.kr/np/resources/images/index/short_cut01.png) no-repeat;
+    position: absolute;
+    right:-1px;
+    bottom:0;
+    width: 299px;
+    height: 136px;
+}
+.shortCutMenu__inner--img02:after{
+    content:'';
+    background: url(https://www.pipc.go.kr/np/resources/images/index/short_cut02.png) no-repeat;
+    position: absolute;
+    right:-1px;
+    bottom:0;
+    width: 299px;
+    height: 136px;
+}
+.shortCutMenu__inner--img03:after{
+    content:'';
+    background: url(https://www.pipc.go.kr/np/resources/images/index/short_cut03.png) no-repeat;
+    position: absolute;
+    right:-1px;
+    bottom:0;
+    width: 299px;
+    height: 136px;
+}
+.shortCutMenu__inner--img04:after{
+    content:'';
+    background: url(https://www.pipc.go.kr/np/resources/images/index/short_cut04.png) no-repeat;
+    position: absolute;
+    right:-1px;
+    bottom:0;
+    width: 299px;
+    height: 136px;
+} */
+
+/* sec 03 */
+.noticeWrap{
+    padding: 90px 0 85px;
+    background: #f5f5f5;
+}
+.noticeWrap .container{
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+.tab__wrap{
+    position: relative;
+}
+.tab__wrap .tab__inner{
+    margin-top: 30px;
+}
+.tab__list{
+    margin-top: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 0;
+    background: #fff;
+    border-radius: 8px;
+    -webkit-border-radius :8px;
+}
+.tab__list > li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.tab__list > li .tabAnchor{
+    display: block;
+    padding: 4px 28px;
+    font-size: 20px;
+    line-height: 50px;
+    background: #fff;
+    border: 1px solid #eee;
+    -ms-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    transform: translateY(-4px);
+    border-radius: 8px;
+    -webkit-border-radius :8px;
+}
+.tab__list > li.active .tabAnchor{
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 8px;
+    -webkit-border-radius :8px;
+}
+.btn__more{
+    position: absolute;
+    top:18px;
+    right:20px;
+}
+.btn__more .text__mid{
+    position: relative;
+    padding-left: 20px;
+    background: url(https://www.pipc.go.kr/np/resources/images/index/i_notice_more.png) 0 50% no-repeat;
+    
+}
+.notice__list > ul > li{
+    float: left;
+    /* width: calc(25% - 30px); */
+    /* margin-left: 40px; */
+}
+.notice__list > ul > li.flexWrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.notice__list > ul > li.flexWrap .noticeShortCut{
+    width: calc(25% - 20px);
+}
+.notice__list > ul > li:first-child{
+    margin-left: 0;
+}
+.noticeShortCut{
+    display: block;
+    position: relative;
+    padding: 0 20px 20px;
+    /* height: 280px; */
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    -webkit-border-radius :8px;
+    /* -webkit-box-shadow: 10px 10px 20px 0px #ccc;
+    box-shadow: 10px 10px 20px 0px #ccc; */
+}
+.noticeShortCut:hover,
+.noticeShortCut:focus{
+    border: 1px solid #429ce3;
+}
+.notice__header{
+    padding: 48px 0 16px;
+}
+.notice__header .text__slarge{
+    height: 44px;
+    line-height: 22px;
+    font-weight: 700;
+    overflow: hidden;
+    word-break: keep-all;
+}
+.notice__innee{
+    padding-top: 15px;
+    border-top: 1px solid #000;
+}
+.notice__innee .text__mid{
+    height: 72px;
+    line-height: 24px;
+    overflow: hidden;
+    word-break: keep-all;
+}
+.notice__date{
+    margin-top: 50px;
+}
+.noticeSwiper .swiper__option{
+    opacity: 0;
+}
+/* sec 3 */
+.bottomMenu{
+    padding: 140px 0 70px;   
+}
+.bottomMenu__list{
+    float: left;
+    max-width: calc(100% - 320px);
+}
+
+.bottomMenu__list > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -2px;
+}
+.bottomMenu__list > ul > li{
+    text-align: center;
+    margin: 2px;
+    /* float: left;
+    margin-left: 25px;
+    width: calc(14% - 22px); */
+}
+.bottomMenu__list > ul > li:first-child{
+    /* margin-left: 0; */
+	/* width:135px; */
+}
+.bottomMenu__list > ul > li > a{
+    display: block;
+    position: relative;
+    /* padding-top: 120px; */
+}
+.bottomMenu__list > ul > li > a > .text__mid{
+    display: block;
+    /* margin-top: 18px; */
+    text-align: center;
+    line-height: 1.25;
+}
+.shortIcon .icon{
+    position: relative;
+    /* display: inline-block; */
+}
+.shortIcon .icon__pc{
+    display: block;
+}
+.shortIcon .icon__pc:after{
+    content:'';
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    border: 1px solid #fff;
+    border-radius: 41px;
+}
+.shortIcon:hover .icon__pc:after{
+    border-color: #000;
+}
+.bottomMenu__list > ul > li:first-child .shortIcon .icon__pc:after{
+    /* left: 15px;
+    right: 18px;
+    bottom: 20px; */
+}
+.bottomMenu__list > ul > li:nth-child(5) .shortIcon .icon__pc:after,
+.bottomMenu__list > ul > li:nth-child(6) .shortIcon .icon__pc:after{
+    /* right:12px */
+}
+.shortIcon .icon img{
+    width: 100%;
+}
+.icon__m{
+    display: none;
+}
+/*
+.shortIcon__01{
+    background: url(https://www.pipc.go.kr/np/resources/images/index/bottom_menu01.png) 50% 50% no-repeat;
+}
+.shortIcon__02{
+    background: url(https://www.pipc.go.kr/np/resources/images/index/bottom_menu02.png) 50% 50% no-repeat;
+}
+.shortIcon__03{
+    background: url(https://www.pipc.go.kr/np/resources/images/index/bottom_menu03.png) 50% 50% no-repeat;
+}
+.shortIcon__04{
+    background: url(https://www.pipc.go.kr/np/resources/images/index/bottom_menu04.png) 50% 50% no-repeat;
+}
+.shortIcon__05{
+    background: url(https://www.pipc.go.kr/np/resources/images/index/bottom_menu05.png) 50% 50% no-repeat;
+}
+.shortIcon__06{
+    background: url(https://www.pipc.go.kr/np/resources/images/index/bottom_menu06.png) 50% 50% no-repeat;
+}
+.shortIcon__07{
+    background: url(https://www.pipc.go.kr/np/resources/images/index/bottom_menu07.png) 50% 50% no-repeat;
+}
+*/
+/*
+.shortIcon:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:50%;
+	margin-left:-60px;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    -webkit-border-radius :40px;
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 5px 20px 0px #ccc;
+    box-shadow: 0px 5px 20px 0px #ccc;
+}
+
+.shortIcon__02:after{
+    content:'';
+    width: 68px;
+    height: 68px;
+    background: url(https://www.pipc.go.kr/np/resources/images/index/bottom_menu02.png) 50% 50% no-repeat;
+    position: absolute;
+    top:28px;
+    left:50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+*/
+
+.bottomMenu__slide{
+    float: right;
+    width: 324px;
+    overflow: hidden;
+}
+.bottomMenu__slide .swiper-slide__inner{
+    display: block;
+    margin: 2px;
+}
+.sideSwiper{
+    position: relative;
+}
+.sideSwiper .swiper__option{
+    font-size: 18px;
+    height: 21px;
+    margin-top: 12px;
+}
+.sideSwiper .swiper-paging{
+    width: auto;
+    float: left;
+}
+.sideSwiper .swiper__option .swiper__controll{
+    margin-left: 0;
+    padding: 0 20px;
+}
+.sideSwiper .swiper__option .swiper-pagination-current{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sideSwiper .swiper__option .swiper__stop{
+    width: 16px;
+    height: 21px;
+    vertical-align: middle;
+    background: url(https://www.pipc.go.kr/np/resources/images/index/slide_pause_sml.png) 50% 50% no-repeat;
+    background-size: 100% auto;
+    margin-top: 0;
+}
+.sideSwiper .swiper__option .swiper__play{
+    width: 16px;
+    height: 21px;
+    vertical-align: middle;
+    background-size:100% auto;
+    margin-top: 0;
+}
+.sideSwiper .swiper-button-next{
+    width: 12px;
+    height: 21px;
+    margin-top: 0;
+}
+.sideSwiper .swiper-button-next:after{
+    width: 12px;
+    height: 21px;
+    background: url(https://www.pipc.go.kr/np/resources/images/index/slide_next.png) no-repeat;
+    background-size: 100% auto;
+}
+.sideSwiper .swiper-button-prev{
+    width: 12px;
+    height: 21px;
+    margin-top: 0;
+}
+.sideSwiper .swiper-button-prev:after{
+    width: 12px;
+    height: 21px;
+    background: url(https://www.pipc.go.kr/np/resources/images/index/slide_prev.png) no-repeat;
+    background-size: 100% auto;
+}
+.sideSwiper .swiper__option .swiper-rightOption-wrap {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	right: 0;
+}
+.sideSwiper .swiper__option .swiper-rightOption-wrap .swiper-button-prev {
+	width: 12px;
+    height: 21px;
+    margin-top: 0;
+    position: static;
+}
+.sideSwiper .swiper__option .swiper-rightOption-wrap .swiper-button-next {
+	width: 12px;
+    height: 21px;
+    margin-top: 0;
+    position: static;
+}
+.sideSwiper .swiper__option .swiper-rightOption-wrap .swiper__controll {
+	width: 40px;
+	padding: 0 12px;
+	height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* sec 4 */
+
+
+
+.snsWrap{
+    padding: 100px 0 120px;
+    background-color: #E2E6F1;
+}
+.board_flex_box{}
+.snstitle_box{display: flex; align-items: flex-end;}
+.snstitle{position: relative; letter-spacing: -1.8px; line-height: 100%; color: #333333; font-size: 36px; font-weight: 600; margin-right: 20px;}
+.snstitle::before{position: absolute; content: ''; left: 0; top: -10px; width: 65px; height: 5px; background-color: #333333;}
+.snstxt{font-size: 18px; color: #808080; line-height: 100%;}
+
+.sns_flex_box{display: flex; justify-content: space-between;align-items: flex-end;}
+.snsList{display: flex; justify-content: space-between; margin: 60px 15px 0;}
+.snsList>li{max-width: 305px; width: 100%; margin: 0 15px; }
+.snsList>li.hcms{text-align:center;}
+.snsList>li>a{display: block; border-radius: 30px; overflow: hidden; box-shadow: 5px 5px 15px rgba(0,0,0,.2); background-color: #fff;}
+.snsList>li>a:hover{transform: translateY(-30px); box-shadow: 5px 30px 30px rgba(0,0,0,.2);border: 1px solid #FFD800;}
+.snsList>li>a>figure{width: 100%; height: 350px; background-position:50% 0px; background-repeat: no-repeat; background-size: cover; overflow: hidden; border-radius: 30px;}
+.snsList>li>a>img{width: 100%; height: 350px; background-position:50% 0px; background-repeat: no-repeat; background-size: cover; overflow: hidden; border-radius: 30px;}
+.snsList>li>a>p{margin: 20px; font-size: 20px; height: 50px; line-height: 120%; font-weight: 500; color: #000; text-align: center; overflow: hidden; text-overflow: ellipsis; word-break:keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.snsList>li>a>p span{
+    display: inline-block;
+    margin-right: 5px;
+    text-indent: -5000px;
+    width: 20px;
+    height: 20px;
+}
+
+.snsList>li>input{margin-bottom:30px;}
+
+
+.sns_box{
+    display: flex;
+}
+.sns_box>li{
+    margin-left: 5px;
+}
+.btn__sns{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+} 
+.snsWrap .btn__sns:hover{border: 1px solid #FFD800;}
+.mobileBottom{display: none;}
+.mobileBottom .btn__sns{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 4px;
+} 
+
+.i_twitter_w{background: rgba(255,255,255,1) url(https://www.pipc.go.kr/np/resources/images/common/i_twitter_b.svg) center 50% no-repeat;}
+.i_facebook_w{background: rgba(255,255,255,1) url(https://www.pipc.go.kr/np/resources/images/common/i_facebook_b.svg) center 50% no-repeat;}
+.i_utube_w{background: rgba(255,255,255,1) url(https://www.pipc.go.kr/np/resources/images/common/i_utube_b.svg) center 50% no-repeat;}
+.i_blog_w{background: rgba(255,255,255,1) url(https://www.pipc.go.kr/np/resources/images/common/i_blog_b.svg) center 50% no-repeat;}
+.i_insta_w{background: rgba(255,255,255,1) url(https://www.pipc.go.kr/np/resources/images/common/i_insta_b.svg) center 50% no-repeat;}
+
+.i_twitter_b{background: rgba(255,255,255,0) url(https://www.pipc.go.kr/np/resources/images/common/i_twitter_w.svg) center 50% no-repeat;}
+.i_facebook_b{background: rgba(255,255,255,0) url(https://www.pipc.go.kr/np/resources/images/common/i_facebook_w.svg) center 50% no-repeat;}
+.i_utube_b{background: rgba(255,255,255,0) url(https://www.pipc.go.kr/np/resources/images/common/i_utube_w.svg) center 50% no-repeat;}
+.i_blog_b{background: rgba(255,255,255,0) url(https://www.pipc.go.kr/np/resources/images/common/i_blog_w.svg) center 50% no-repeat;}
+.i_insta_b{background: rgba(255,255,255,0) url(https://www.pipc.go.kr/np/resources/images/common/i_insta_w.svg) center 50% no-repeat;}
+
+.snsContents{
+    margin-top: 40px;
+    justify-content: space-between;
+    display: flex;
+}
+.snsContents__inner{
+    position: relative;
+    /* float: left; */
+    /* margin-left: 40px; */
+    /* max-width: 440px;
+    width: calc(33.33% - 27px); */
+    width: calc(50% - 30px);
+    height: 516px;
+    border: 1px solid #aeaeae;
+    overflow-y: auto;
+}
+.snsContents__inner:first-child{
+    margin-left: 0;
+}
+.snsContents__inner:nth-child(2){
+    margin-left: auto;
+}
+
+
+
+@media all and (max-width:1280px){
+    .snsList{margin: 60px 10px 0;}
+    .snsList>li{ margin: 0 10px;}
+    .snsList>li>a{border-radius: 20px; box-shadow: 5px 5px 15px rgba(0,0,0,.2);}
+    .snsList>li>a>figure{height: 300px; border-radius: 20px;}
+	.snsList>li>a>img{height: 300px; border-radius: 20px;}
+    .snsList>li>a>p{margin: 15px; font-size: 18px; height: 45px;}
+}
+@media all and (max-width:1024px){
+    .snsList{margin: 60px 0 0;}
+    .snsList>li{ margin: 0 10px;}
+    .snsList>li:first-child{ margin-left: 0;}
+    .snsList>li:last-child{ margin-right: 0;}
+    .snsList>li>a{border-radius: 20px; box-shadow: 5px 5px 15px rgba(0,0,0,.2);}
+    .snsList>li>a>figure{height: 300px; border-radius: 20px;}
+	.snsList>li>a>img{height: 300px; border-radius: 20px;}
+    .snsList>li>a>p{margin: 15px; font-size: 18px; height: 45px;}
+}
+
+@media all and (max-width:900px){
+    .sns_flex_box{padding: 0 20px !important;}
+    .snstitle_box {display: flex; align-items: flex-start; flex-direction: column;}
+    .snstitle{margin-bottom: 5px;}
+    .snsWrap {padding: 50px 0 60px;}
+    .snsList{margin: 40px 10px 0;}
+    .snsList>li>a{border-radius: 10px;}
+    .snsList>li>a>figure{height: 250px; border-radius: 10px;}
+	.snsList>li>a>img{height: 250px; border-radius: 10px;}
+}
+@media all and (max-width: 768px) {
+    .snsList{display: flex; justify-content: center; flex-wrap: wrap; margin: 40px 15px 0;}
+    .snsList>li{max-width: calc(50% - 30px); width: 100%; margin: 0 15px 40px;}
+    .snsList>li:first-child{ margin-left: 15px;}
+    .snsList>li:last-child{ margin-right: 15px;}
+    .snsList>li>a{border-radius: 30px; }
+    .snsList>li>a>figure{height: 200px; border-radius: 30px;}
+	.snsList>li>a>img{height: 200px; border-radius: 30px;}
+    .snsList>li>a>p{margin: 20px; font-size: 20px; height: 50px;}
+}
+@media all and (max-width: 767px) {
+
+}
+
+@media all and (max-width: 480px) {
+    .sns_flex_box {justify-content: center; align-items: flex-start; flex-direction: column;}
+    .snstxt{margin-bottom: 15px;}
+    .snsList{display: flex; justify-content: center; flex-wrap: wrap; flex-direction: column; align-items: center; margin: 40px 15px 0;}
+    .snsList>li{max-width: 305px; width: 100%; margin: 0 15px 40px;}
+    .snsList>li:first-child{ margin-left: 15px;}
+    .snsList>li:last-child{ margin-right: 15px;}
+    .snsList>li>a{border-radius: 30px; }
+    .snsList>li>a>figure{height: 350px; border-radius: 30px;}
+	.snsList>li>a>img{height: 350px; border-radius: 30px;}
+    .snsList>li>a>p{margin: 20px; font-size: 20px; height: 50px;}
+}
+
+/* sec 5 */
+
+.sortTab{
+    margin-top: 45px;
+}
+.sortTab > ul{
+    font-size: 0;
+    text-align: center;
+}
+.sortTab > ul > li{
+    display: inline-block;
+    margin: 5px 10px;
+}
+.sortButton{
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 1;
+    border: 1px solid #D0D0D0;
+    background: #fff;
+    text-align: center;
+    border-radius: 30px;
+}
+.sortButton>span{font-size: 20px;}
+.sortButton>span>strong{font-size: 20px; color: #FFD800; font-weight: 500;}
+.sortButton.active>span{color: #fff;}
+.sortButton.active{
+    background: #002B65;
+    border-color: #002B65;
+    color: #fff;
+}
+
+.faqWrap{ padding: 100px 0; background: #F6F6F9;}
+.faq_list_box{display: flex; flex-flow: row wrap; justify-content: left; margin: 40px 15px 0;}
+.faq_list_box>li{width: 25%; padding: 15px;}
+.faq_list_box>li>a{display: block; max-width: 305px; height: 160px; border-radius: 20px; padding: 25px; overflow: hidden; box-shadow: 10px 10px 30px rgba(0,0,0,.1); background-color: #fff;}
+.faq_list_box>li>a:hover{transform: translateY(-10px); box-shadow: 5px 30px 30px rgba(0,0,0,.15);border: 1px solid #FFD800;}
+
+.faq_list_box>li>a>.faq_title{width: 100%; height: 30px; font-size: 16px; line-height: 30px; margin-bottom: 10px; font-weight: 500; color: #FFD800; display:inline-block; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.faq_list_box>li>a>.faq_txt{width: 100%; height: 60px; font-size: 20px; line-height: 140%; font-weight: 500; color: #585858;  overflow: hidden; text-overflow: ellipsis; word-break:keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.btn_al_center_box{display: flex; justify-content: center; align-items:center; margin-top: 40px;}
+.faqButton{font-size:16px; font-weight: 500; color: #666; height: 40px; padding: 0 60px; display: flex; justify-content: center; align-items: center; background-color: #FFFFFF;border: 1px solid #D0D0D0;border-radius: 8px;}
+.faqButton>span{display: inline-block; margin-left: 10px; width: 10px; height: 10px; background: url(https://www.pipc.go.kr/np/resources/images/common/ico_select_arr.svg) center 4px no-repeat;}
+.faqButton>span.faqClose{display: inline-block; margin-left: 10px; width: 10px; height: 10px; background: url(https://www.pipc.go.kr/np/resources/images/common/ico_select_top.png) center 4px no-repeat;}
+.faqButton:hover{ background-color: #FFFFFF; color: #FFD800; border: 1px solid #FFD800;}
+.faqcloseButton{font-size:16px; font-weight: 500; color: #666; height: 40px; padding: 0 60px; display: flex; justify-content: center; align-items: center; background-color: #FFFFFF;border: 1px solid #D0D0D0;border-radius: 8px;}
+.faqcloseButton>span{display: inline-block; margin-left: 10px; width: 10px; height: 10px; background: url(https://www.pipc.go.kr/np/resources/images/common/ico_select_arr.svg) center 50% no-repeat; transform: rotate(180deg);}
+.faqcloseButton:hover{ background-color: #FFFFFF; color: #FFD800; border: 1px solid #FFD800;}
+
+@media all and (max-width:1280px){
+    .faq_list_box>li{padding: 10px;}
+}
+@media all and (max-width:1024px){
+   .faq_list_box{margin: 40px 0 0;}
+}
+
+@media all and (max-width:900px){
+    .faqWrap {padding: 60px 0;}
+}
+@media all and (max-width: 768px) {
+    .faqWrap .container{margin: 0 20px;}
+    .faq_list_box{display: flex; justify-content: left; flex-wrap: wrap;}
+    .faq_list_box>li{width: 50%; padding: 0 10px 20px;}
+}
+@media all and (max-width: 767px) {
+
+}
+
+@media all and (max-width: 480px) {    
+    .faq_list_box>li{width: 100%; padding: 0 15px 20px;}
+    .faq_list_box>li>a{max-width: 100%;}
+}
+
+
+
+.faqSlide{
+    margin-top: 30px;
+    overflow: hidden;
+}
+.slideAnchor{
+    display: block;
+    padding: 30px 20px 38px;
+    border: 1px solid #fff;
+    background: #fff;
+    -webkit-border-radius :8px;
+    border-radius: 8px;
+    transition: .3s;
+    -webkit-transition: .3s;
+}
+.slideAnchor:after{
+    content:'';
+    position: absolute;
+    top:30px;
+    right:10px;
+    width: 13px;
+    height: 13px;
+    opacity: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+}
+.slideAnchor:hover:after,
+.slideAnchor:focus:after{
+    opacity: 1;
+}
+.slideAnchor:hover,
+.slideAnchor:focus{
+    border-color: #429ce3;
+    -webkit-box-shadow: 5px 5px 10px 0px #ccc;
+    box-shadow: 5px 5px 10px 0px #ccc;
+}
+.faqSlideM{
+    /* display: none; */
+    opacity: 0;
+    height: 0;
+}
+
+.faqSlide .swiper-slide{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+.faqSlidePc .slideAnchor{
+    width: calc(100% - 20px);
+}
+.slideAnchor .text__mid{
+    color: #429ce3;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+.slideAnchor:hover .text__mid,
+.slideAnchor:focus .text__mid{
+    color: #1862a0;
+}
+.slideAnchor .text__slarge{
+    margin-top: 26px;
+    height: 48px;
+    line-height: 24px;
+	font-weight:700;	
+	word-break: keep-all;	
+}
+.faqSlide .swiper__option{
+    margin-top: 40px;
+    max-width: 1400px;
+}
+
+/* sec 6 */
+.infoService_Wrap{ padding: 50px 0 10px; background: #fff;}
+.info_flex_box{display: flex; justify-content: space-between;}
+.infoService_title{font-size: 26px; font-weight: 500; letter-spacing: -1.3px;color: #202020; margin-bottom: 10px;}
+
+.infoService_left_box{display: flex; flex-direction: column; width: calc(55% - 20px); margin-bottom: 40px;}
+.infoService_left_list_box{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.infoService_left_list_box>li{width: calc(33.33333% - 4px); margin-bottom: 6px;}
+.btn_info_le_ban{display: flex; justify-content: space-between; align-items: center; height: 65px; padding: 10px; border: 1px solid #E0E0E0;}
+.btn_info_le_ban:hover{border: 1px solid #FFD800;}
+.btn_info_le_ban:hover p{color:#FFD800;}
+.btn_info_le_ban>span{flex: 0 0 55px;}
+.btn_info_le_ban>p{flex: 1 1 auto; letter-spacing: -0.9px; font-size: 16px; font-weight: 300; color: #202020; line-height: 120%;}
+
+.infoService_right_box{display: flex; flex-direction: column; width: calc(45% - 20px); margin-bottom: 40px;}
+.infoService_right_list_box{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.infoService_right_list_box>li{width: calc(50% - 4px); margin-bottom: 6px;}
+.btn_info_ri_ban{display: flex; justify-content: space-between; align-items: center; height: 65px; padding: 10px; border: 1px solid #E0E0E0;}
+.btn_info_ri_ban:hover{border: 1px solid #FFD800;}
+.btn_info_ri_ban:hover p>strong{color:#FFD800;}
+.btn_info_ri_ban>span{flex: 0 0 55px;}
+.btn_info_ri_ban>p{flex: 1 1 auto; letter-spacing: -0.9px; font-size: 13px; font-weight: 300; color: #808080; line-height: 120%;}
+.btn_info_ri_ban>p>strong{display: block; font-size: 18px; font-weight: 500; color: #202020;}
+
+
+@media all and (max-width:1280px){
+}
+@media all and (max-width:1024px){
+    .info_flex_box{flex-direction: column;}
+    .infoService_left_box{width: 100%;}
+    .infoService_right_box{width: 100%;}
+}
+@media all and (max-width:900px){
+}
+@media all and (max-width: 768px) {
+    .infoService_left_list_box>li{width: calc(50% - 4px);}
+}
+@media all and (max-width: 767px) {
+}
+@media all and (max-width: 480px) {
+    .infoService_left_list_box>li{width: 100%;}
+    .infoService_right_list_box>li{width: 100%;}
+}
+
+/* footer */
+.footer_Wrap{}
+.footer_top_box{background-color: #42444D;}
+.footer_menu_box{max-width: 1400px; margin: 0 auto; display: flex;}
+.footer_menu_box>li{}
+.footer_menu_box>li:first-child a{color: #3FC7EF;}
+.footer_menu_box>li>a{display: inline-block; font-size: 15px; font-weight: 600; color: #fff; margin-right: 50px; height: 60px; line-height: 60px;}
+.footer_bottom_box{background-color: #4B4D56;}
+.footer_info_box{background-color: #4B4D56; padding: 50px 0; position: relative;}
+.address{font-size: 15px; font-weight: 300; color: #fff; letter-spacing: 0;}
+.tellInfo{margin: 20px 0 10px; display: flex; flex-wrap: wrap; max-width: 650px;}
+.tellInfo>li{font-size: 15px; font-weight: 300; margin-bottom: 10px; color: #fff; border-left: 1px solid rgba(255,255,255,.3); line-height: 100%; margin-right: 10px; padding-left: 10px;letter-spacing: 0;}
+.tellInfo>li:first-child{border-left: none; padding-left: 0;}
+.tellInfo>li:nth-child(4){border-left: none; padding-left: 0;}
+.copyRight{font-size: 15px; font-weight: 100; color: #ccc;}
+
+.w3c{position: absolute;bottom:50px;right:10px;}
+
+@media all and (max-width: 768px) {
+    .w3c{position: static; margin-bottom: 20px;}
+	.footer_menu_box>li>a{margin-right: 40px;}
+}
+@media all and (max-width: 680px) {
+    .tellInfo>li:nth-child(3){border-left: none; padding-left: 0;}
+    .tellInfo>li:nth-child(4){ border-left: 1px solid rgba(255,255,255,.3); padding-left: 10px;}
+    .tellInfo>li:nth-child(5){border-left: none; padding-left: 0;}
+	.footer_menu_box>li>a{margin-right: 35px;}
+}
+@media all and (max-width: 480px) {
+    .tellInfo>li{width: 100%; border-left: none !important; padding-left: 0 !important;}
+	.footer_menu_box>li>a{margin-right: 12px; font-size:14px; }
+}
+
+
+
+/* TOP -- */
+.el_top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 3px;
+	background: rgba(0,0,0,0.6) url(https://www.pipc.go.kr/np/resources/images/common/ico_top.svg) 50% 50% no-repeat;
+	opacity: 1;
+    display: none;
+}
+@media all and (max-width: 1024px) {
+    .el_top {
+		bottom: 10px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+
+
+/***** sub *****/
+.header.fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 194px;
+    z-index: 3;
+}
+.subMain{
+    margin-top: 194px;
+    overflow: hidden;
+}
+/* .scrollContents, */
+.subMaintab{
+    margin-top: 194px;
+}
+.scrollContents__inner{
+    position: relative;
+    height: 100%;
+}
+.scrollGnb{
+    position:fixed;
+    top:50%;
+    right:100px;
+    padding: 46px 0;
+    z-index: 2;
+    border-right: 1px solid #7f7f7f;
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: border-color 1s linear;
+    -webkit-transition: border-color 1s linear;
+}
+.scrollGnb.white{
+    border-color: #fff;
+}
+.scrollGnb ul li{
+    text-align: right;
+}
+.scrollGnb ul li:first-child{
+    margin-top: 0;
+}
+.scrollGnb ul li a{
+    display:block;
+    padding: 15px 21px 15px 0;
+    font-size: 16px;
+    transition: color 1.5s;
+    -webkit-transition: color 1.5s;
+}
+.scrollGnb ul li.on a{
+    position: relative;
+    font-size: 20px;
+}
+.scrollGnb ul li.on a:after{
+    content:'';
+    position: absolute;
+    right:-2px;
+    top:0;
+    width: 3px;
+    height: 100%;
+    background-color: #000;
+}
+.scrollGnb.white > ul > li a{
+    color: #fff;
+}
+.scrollGnb.white > ul > li a:after{
+    background-color: #fff;
+}
+/* .imgFit, */
+.imgFit{
+    position: relative;
+    max-width: 1920px;
+    margin-left: -960px;
+    left: 50%;
+}
+.imgFit > img{
+    width: 100%;
+    height: 100%;
+    object-fit: none; /* cover */
+}
+.infoBox2{
+    padding: 40px 78px 60px 220px;
+    color: #fff;
+    background: rgba(0,0,0,.9);
+    /* overflow-y: auto;
+    max-height: 60vh; */
+}
+.scrollContents__inner .infoBox2{
+    position: absolute;
+    top:50%;
+    left:0;
+    max-width: 870px;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.title{
+    font-size: 40px;
+    line-height: 1.18;
+}
+
+.title_bold{
+    font-size: 40px;
+    line-height: 1.18;
+    font-weight: bold;
+    color:white;
+}
+
+.title__large{
+    font-size: 50px;
+    font-weight: bold;
+    color:white;
+}
+
+.scrollContents__inner .infoBox2 .title + .title{
+    margin-top: 20px;
+}
+.scrollContents__inner .infoBox2 .title span.title__large{
+    display: block;
+}
+.infoBox2__text{
+    margin-top: 45px;
+}
+.infoBox2__text .text__slarge{
+    margin-top: 20px;
+    word-break: keep-all;
+    line-height: 1.3;
+}
+.infoBox2 .btnswrap{
+    margin-top: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.btn_small{
+    padding: 0 35px;
+    min-width: 160px;
+    height: 56px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 20px;
+}
+.btn_small.square{
+    color: #fff;
+    border: 2px solid #fff;
+}
+.btn_small.square:hover,
+.btn_small.square:focus{
+    background: rgba(255,255,255,.2);
+}
+.btn_small--full{
+    width: 100%;
+}
+/* sec 2*/
+.infoBox2 .btnswrap .alignLeft{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.infoBox2 .btnswrap .alignLeft .btn_small + .btn_small{
+    margin-left: 22px;
+}
+
+.alignRight{
+    margin-left: 22px;
+    width: 100%;
+}
+.subContainer{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.subContainer.profile{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom:50px;
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; */
+    /* height: 100%;
+    align-items: center; */
+}
+.profile .leftArea{
+    flex: 1 1 auto;
+    padding-bottom: 40px;
+    /* padding-left: 180px;
+    padding-right: 50px; */
+}
+.imgFace{
+    /* margin: 40px 0 0 20px; */
+    position: relative;
+    max-width: 630px;
+    box-shadow:10px 40px 80px #ccc;
+}
+.imgFace > img{
+    width: 100%;
+}
+.profile__box{
+    position: absolute;
+    bottom:-110px;
+    right:-30px;
+    padding: 60px 60px 70px;
+    color: #fff;
+    background: rgba(0,0,0,.8);
+}
+.profile__box::before{
+    content:'';
+    width: 157px;
+    height: 201px;
+    position: absolute;
+    top:-8px;
+    right:-23px;
+    background: url(https://www.pipc.go.kr/np/resources/images/sub/profile_box1.png) no-repeat;
+}
+.profile__box::after{
+    content:'';
+    width: 151px;
+    height: 108px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    background: url(https://www.pipc.go.kr/np/resources/images/sub/profile_box2.png) no-repeat;
+}
+.profile__box .title{
+    color: #fff;
+    margin-top: 28px;
+}
+.profile .rightArea{
+    flex: 1 1 70%;
+    padding-left: 58px;
+}
+
+.historyTable{
+    position: relative;
+    padding-top: 10px;
+}
+.historyTable:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 75px;
+    height: 1px;
+    background: #000;
+}
+.historyTable table th,
+.historyTable table td{
+    padding: 10px 0;
+    text-align: left;
+    line-height: 1.65;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.historyTable table td{
+    padding-left: 30px;
+}
+
+.historyTable + .historyTable{
+    margin-top: 30px;
+}
+.historyTable + .historyTable th{
+    min-width: 190px;
+}
+
+/** sec 3 **/
+.scrollContents__inner.schedule{
+    background-color: #f5f5f5;
+}
+.schedule .subContainer{
+    padding-top: 90px;
+}
+.title__underline{
+    position: relative;
+    padding-top: 30px;
+}
+.title__underline:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 1px;
+    background: #000;
+}
+
+.schedule__inner{
+    padding: 70px 0 130px;
+}
+
+.inline__b{
+    display: inline-block;
+}
+.selectwrap{
+    position: relative;
+}
+.selectwrap select{
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.selectwrap:after{
+    content:'';
+    /* background: url(https://www.pipc.go.kr/np/resources/images/common/i_select.png) no-repeat; */
+    position: absolute;
+    right:0;
+    top:13px;
+    width: 9px;
+    height: 5px;
+}
+.selectwrap + .selectwrap{
+    margin-left: 30px;
+}
+.scheduleTable{
+    margin-top: 20px;
+}
+.scheduleTable .scheduleTable_left{
+    float: left;
+    width: calc(100% - 320px);
+    background: #fff;
+}
+.scheduleTable_left table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 0;
+    border-spacing: 0;
+}
+.scheduleTable_left thead th{
+    height: 70px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 18px;
+    border-left: 1px solid #f5f5f5;
+    border-bottom: 1px solid #ccc;
+}
+.scheduleTable_left thead th:first-child{
+    border-left: 0;
+}
+.scheduleTable_left tbody td{
+    position: relative;
+    height: 120px;
+    vertical-align: bottom;
+    border-right: 1px solid #f5f5f5;
+    border-bottom: 1px solid #ccc;
+}
+.scheduleTable_left tbody tr:last-child td{
+    border-bottom: 0;
+}
+.schedule__wrap{
+    position: absolute;
+    top:2px;
+    left:2px;
+}
+.schedule__wrap > p{
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: top;
+}
+.schedule__date{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+}
+.schedule__date.today{
+    background: #cdeff1;
+}
+.schedule__date.sunday,
+.schedule__date.sunday+ p{
+    color: #e10202;
+}
+.schedule__date.plus{
+    background: #e10202;
+    color: #fff;
+}
+.schedule__tit{
+    position: absolute;
+    left:0;
+    width: 100%;
+    /* position: relative;
+    margin-top: 2px; */
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    background:#f6f7fa;
+}
+.schedule__tit:after{
+    content:'';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.schedule__tit.green:after{
+    background: #05afba;
+}
+.schedule__tit.green{
+    bottom: 32px;
+}
+.schedule__tit.orange{
+    bottom: 0;
+}
+.schedule__tit.orange:after{
+    background: #ffa800;
+}
+.scheduleTable__right{
+    float: left;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.scheduleWrap{
+    padding: 15px;
+
+    background: #fff;
+}
+.scheduleList li + li{
+    margin-top: 10px;
+}
+.scheduleDate{
+    float: left;
+    
+}
+.scheduleDetail{
+    float: left;
+    margin-left: 20px;
+}
+.scheduleDetail .text__slarge{
+    margin-top: 10px;
+}
+.scheduleTable__right .paging{
+    margin-top: 30px;
+    text-align: center;
+}
+.pagingNum{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 16px;
+    color: #0a468c;
+}
+.pagingNum.actived,
+.pagingNum:hover{
+    background: #000;
+    color: #fff;
+}
+@media print {
+.anchorBox{
+        height: 60px;
+    }
+    .btn3n .anchorBox{
+    	padding-top : 15px;
+        font-size: 13px;
+    	text-align: center;
+		word-break: keep-all;
+    }
+}
+
+
+/* 20230419 index.html 하단 소스에서 이동함 / st */
+.pcOnly{
+    display: block !important;
+}
+.mobileOnly{
+    display: none !important;
+}
+.swiper__option .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+}
+.swiper__option .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width: 40px;
+}
+.swiper__option .swiper-pagination-bullet:focus{
+    border: 3px solid #000;
+}
+.swiper__option .swiper__play,
+.swiper__option .swiper__stop{
+    width: 20px;
+    height: 20px;
+}
+.page_number{
+    font-size: 16px;
+    color: #FFD800;
+}
+.totalNun{
+    font-size: 16px;
+}
+
+@media all and (max-width: 1024px) {
+    .pcOnly{
+        display: none !important;
+    }
+    .mobileOnly{
+        display: block !important;
+    }
+
+    .swiper__option .swiper-pagination-bullet{
+        width: 16px;
+        height: 16px;
+    }
+    .swiper__option .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        width: 40px;
+    }
+    .swiper__option .swiper__play,
+    .swiper__option .swiper__stop{
+        width: 13px;
+        height: 13px;
+    }
+    .page_number{
+        font-size: 16px;
+    }
+
+}
+/* 20230419 index.html 하단 소스에서 이동함 / end */
+
+
+
+
+
+
+
+@media print {
+    .subContainer.profile{flex-direction: column; align-items: center; padding-top: 20px;}
+    .profile .leftArea{padding: 20px 45px;}
+    .imgFace > img{max-width: 400px;}
+    .profile__box{padding: 25px; bottom: -50px; right: -30px;}
+    .title__large{font-size: 36px;}
+    .profile__box .title{margin: 0;}
+    .title{font-size: 30px;}
+    .historyTable + .historyTable th {min-width: 150px;}
+    .historyTable table th, .historyTable table td {padding: 5px 0;text-align: left;line-height: 1.65;font-size: 18px;;}
+    .profile .rightArea{flex: 1 1 auto; padding: 70px 20px 30px;}
+}

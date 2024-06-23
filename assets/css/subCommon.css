@@ -1,0 +1,1309 @@
+.btn1 {
+    background-color: #0f4c81;
+    border: 1px solid #0f4c81;
+    color: #fff;
+    padding: 13px 30px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.btn2 {
+    padding: 13px 30px;
+    border: 1px solid #0f4c81;
+    color: #0f4c81;
+    display: inline-block;
+}
+
+.downloadBtn {
+    display: inline-block;
+    border: 1px solid #1579b5;
+    color: #1579b5;
+    padding: 8px 37px 8px 8px;
+    background: url("https://www.pipc.go.kr/np/resources/images/common/downBg.png") right center no-repeat;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 7px;
+}
+
+/*버튼세팅*/
+
+.designBox {
+    border: 2px solid #e8e8e8;
+    min-height: 120px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding: 30px 30px 30px 160px;
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.designBox2 {
+    padding: 30px;
+}
+
+.designBox:before {
+    position: absolute;
+    content: '';
+    width: 220px;
+    height: 8px;
+    bottom: -2px;
+    right: -2px;
+    background-color: #1579b5;
+}
+
+.designBox:after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 100px;
+    bottom: -2px;
+    right: -2px;
+    background-color: #1579b5;
+}
+
+.designBoxS {
+    border: 2px solid #e8e8e8;
+    min-height: 120px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding: 30px 30px 30px 160px;
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.designBoxS:before {
+    position: absolute;
+    content: '';
+    width: 220px;
+    height: 8px;
+    bottom: -2px;
+    right: -2px;
+    background-color: #1579b5;
+}
+
+.designBoxS:after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 100px;
+    bottom: -2px;
+    right: -2px;
+    background-color: #1579b5;
+}
+
+.infoBox {
+    background: url("https://www.pipc.go.kr/np/resources/images/subCommon/infoBoxBg.png") 30px center no-repeat;
+    background-size: 100px;
+    color: black;
+}
+
+.infoBox ul>li {
+    padding-left: 12px;
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.infoBox ul>li:after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 3px;
+    top: 11px;
+    left: 0;
+    border-radius: 5px;
+    background-color: #9abed3;
+}
+
+.infoBox ul>li:last-child {
+    margin-bottom: 0px;
+}
+
+.infoBox ul>li>ol>li {
+    padding: 5px 0 0px 30px;
+    text-indent: -15px;
+}
+
+.infoBoxW {
+    background: url("https://www.pipc.go.kr/np/resources/images/subCommon/infoBoxWBg.png") 30px center no-repeat;
+    background-size: 140px;
+    padding-left: 200px;
+}
+
+.infoBoxW ul>li {
+    padding-left: 12px;
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.infoBoxW ul>li:after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 3px;
+    top: 11px;
+    left: 0;
+    border-radius: 5px;
+    background-color: #9abed3;
+}
+
+.infoBoxW ul>li:last-child {
+    margin-bottom: 0px;
+}
+
+.infoBoxW ul>li>ol>li {
+    padding: 5px 0 0px 30px;
+    text-indent: -15px;
+}
+
+.noticeBox {
+    background: url("https://www.pipc.go.kr/np/resources/images/subCommon/noticeBoxBg.png") 30px center no-repeat;
+    background-size: 100px;
+}
+
+.noticeBox ul>li {
+    padding-left: 12px;
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.noticeBox ul>li:after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 3px;
+    top: 11px;
+    left: 0;
+    border-radius: 5px;
+    background-color: #9abed3;
+}
+
+.noticeBox ul>li:last-child {
+    margin-bottom: 0px;
+}
+
+.noticeBox ul>li>ol>li {
+    padding: 5px 0 0px 30px;
+    text-indent: -15px;
+}
+
+
+/*.scheduleBox{background:url("https://www.pipc.go.kr/np/resources/images/subCommon/scheduleBoxBg.png")30px center no-repeat; background-size:100px;}*/
+.scheduleBox {
+    position: relative;
+    display: flex;
+    padding: 20px 30px 20px 30px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    align-items: center;
+}
+
+.scheduleBox__text {
+    width: calc(44% - 7%);
+    min-height: 98px;
+    margin: 0 7% 0 0;
+    background: url("https://www.pipc.go.kr/np/resources/images/subCommon/noticeIcon.png") 0 center no-repeat;
+}
+
+.scheduleBox__text .text__sTitle {
+    padding-left: 125px;
+    line-height: 1.35;
+    word-break: keep-all;
+}
+
+.scheduleBox__table {
+    width: 56%;
+}
+
+.scheduleBox__table .boardArea {
+    margin-top: 10px;
+}
+
+.scheduleBox__table .board {
+    margin-bottom: 0;
+}
+
+.scheduleBox__table .text__darkBlue {
+    color: #1c6099;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.btn__xSmall {
+    display: inline-block;
+    width: 80px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.buttonsArea {
+    font-size: 0;
+}
+
+.buttonsArea .btn__xSmall {
+    margin-left: 10px;
+}
+
+.btn__black {
+    background: #333;
+    color: #fff;
+}
+
+.btn__darkBlue {
+    background: #164c81;
+    color: #fff;
+}
+
+.icon__excel {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url("https://www.pipc.go.kr/np/resources/images/subCommon/icon_excel.png") 0 center / 100% no-repeat;
+}
+
+.grayBox1 {
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.grayBox2 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.grayBox3 {
+    background-color: #fff;
+    border: 5px solid #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.imgBox {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/*그레이박스*/
+
+.pageInfo {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+
+.pageInfo .satisfaction {
+    padding: 20px;
+}
+
+.pageInfo .satisfaction p {
+    margin-bottom: 15px;
+}
+
+.pageInfo .satisfaction ul li {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.pageInfo .satisfaction input[type='radio'] {
+    margin-bottom: 3px;
+    display: inline-block;
+    background: #fff;
+    width: 17px;
+    height: 17px;
+}
+
+.pageInfo .satisfaction label {
+    color: #888;
+    padding: 0 15px 0 8px;
+}
+
+.pageInfo .satisfaction:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.pageInfo .satisfaction input[type='text'] {
+    height: 40px;
+    padding-left: 10px;
+    width: 85%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.pageInfo .satisfaction a {
+    height: 40px;
+    line-height: 38px;
+    font-weight: bold;
+    width: 15%;
+    background-color: #0f4c81;
+    color: #fff;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+/*페이지인포*/
+
+.subTapBasic {
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+
+.subTapBasic:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.subTapBasic li {
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    border-left: 1px solid #ccc;
+}
+
+.subTapBasic li:first-of-type {
+    border-left: none;
+}
+
+.subTapBasic li>a {
+    display: block;
+    font-size: 18px;
+    line-height: 65px;
+    color: #666;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+    background-color: #ededed;
+}
+
+.subTapBasic li.active>a {
+    background-color: #fff;
+    color: #222;
+    font-weight: bold;
+}
+
+/*서브탭*/
+
+.textType1 {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.textType1.borderN {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+.designBox .textType1 {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+
+.textType1 h3 {
+    padding: 14px 0 0 14px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 32px;
+    position: relative;
+}
+
+.textType1 h3:before {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 4px;
+    top: 0;
+    left: 0;
+    background-color: #0f4c81;
+}
+
+.textType1 h3:after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    background-color: #0f4c81;
+}
+
+.textType1>div {
+    margin-bottom: 15px;
+}
+
+.textType1>div h4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1579b5;
+}
+
+.textType1>div ul {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.textType1>div ul>li {
+    padding-left: 12px;
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.textType1>div ul>li>dl>dt {
+    color: #4d6ba9;
+}
+
+.textType1>div ul>li.bulNone {
+    padding-left: 2px;
+}
+
+.textType1>div ul>li:after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 3px;
+    top: 11px;
+    left: 0;
+    border-radius: 5px;
+    background-color: #9abed3;
+}
+
+.textType1>div ul>li.bulNone:after {
+    width: 0px;
+    height: 0px;
+}
+
+.textType1>div ul>li:last-child {
+    margin-bottom: 0px;
+}
+
+.textType1>div ul ol {
+    margin: 5px 5px 5px 15px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.textType1>div ul ol li {
+    margin-bottom: 5px;
+    text-indent: -7px;
+}
+
+.textType1>div ul ol li:before {
+    content: ' · ';
+}
+
+.textType1>div ul ol li.bulNone {
+    text-indent: -15px;
+    padding-left: 25px;
+}
+
+.textType1>div ul ol li.bulNone:before {
+    content: '';
+}
+
+/*텍스트 폼 세팅*/
+
+
+.tableBox {
+    margin: 10px 0;
+    border-top: 2px solid #0075bf;
+}
+
+.tableBox+p {
+    background: #f6fafc;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #777;
+    line-height: 22px;
+    border: 3px dashed #b7ccdd;
+}
+
+.tableBox table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    min-width: 700px;
+}
+
+.type1 th {
+    background: #f2f3f7;
+    font-weight: bold;
+}
+
+.type1 th,
+.type1 td {
+    border-bottom: 1px solid #c3d0d4;
+    border-right: 1px solid #c3d0d4;
+    padding: 15px 3px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.type1 th:last-child,
+.type1 td:last-child {
+    border-right: none;
+}
+
+.type1 th.left,
+.type1 td.left {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.type1 th.rBoder,
+.type1 td.rBoder {
+    border-right: 1px solid #c3d0d4;
+}
+
+.type1 .bg_yellow {
+    background: #fefbf1;
+}
+
+/*테이블 폼*/
+
+
+.type2 tbody tr:nth-of-type(2n) {
+    background-color: #f6fbfe
+}
+
+.type2 th {
+    background: #0f4c81;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+
+.type2 th,
+.type2 td {
+    border-bottom: 1px solid #c3d0d4;
+    border-right: 1px solid #c3d0d4;
+    padding: 20px 3px;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.type2 th:last-child,
+.type2 td:last-child {
+    border-right: none;
+}
+
+.type2 th.left,
+.type2 td.left {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.type2 th.rBoder,
+.type2 td.rBoder {
+    border-right: 1px solid #c3d0d4;
+}
+
+.type2 img {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 190px;
+}
+
+.memberName {
+    display: inline-block;
+    padding-top: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.mobileInfo {
+    display: none;
+}
+
+
+/*위원소개*/
+.subNav>li>ol {
+    top: 60px;
+    left: 0px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.btn__xSmall {
+    line-height: 32px;
+}
+
+.icon__excel {
+    width: 16px;
+    height: 16px;
+}
+
+.pageIcon {
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+}
+
+.firstPage,
+.lastPage {
+    background-size: 12px;
+}
+
+.prevPage,
+.nextPage {
+    background-size: 5.5px;
+}
+
+/* 달력 문제.. */
+.ui-datepicker-month {
+    color: #FFF;
+}
+
+.breadcrumbs .guideBox {
+    position: relative;
+    height: 60px;
+}
+
+.subNav>li {
+    width: 177px;
+    border-right: 1px solid #e1e1e1;
+}
+
+.subNav {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.subNav>li:first-child {
+    width: 60px;
+    border-left: 1px solid #e1e1e1;
+}
+
+.subNav>li:first-child a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.subNav>li:first-child a:after {
+    display: none;
+}
+
+.subNav>li:last-child>a {
+    color: #FFD800;
+    font-weight: 500;
+}
+
+.subNav>li>a {
+    display: flex;
+    height: 60px;
+    line-height: 110%;
+    align-items: center;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 25px;
+    position: relative;
+}
+
+.subNav>li>a:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 10px;
+    width: 10px;
+    height: 6px;
+    background: url("https://www.pipc.go.kr/np/resources/images/common/ico_select_arr.svg") right 50% no-repeat;
+}
+
+.subNav>li.active>a:after {
+    transform: rotate(180deg);
+}
+
+.subNav li {
+    position: relative;
+    word-break: keep-all;
+}
+
+.subNav>li>ol {
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    left: -1px;
+    width: 178px;
+    z-index: 990;
+    display: none;
+    border: 1px solid #e1e1e1;
+    border-top: none;
+}
+
+.subNav>li>ol>li {
+    line-height: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.subNav>li>ol>li>a>span {
+    color: #666;
+    position: relative;
+}
+
+.subNav>li>ol>li.focus,
+.subNav>li>ol>li:hover {
+    background-color: #fff;
+}
+
+.subNav>li>ol>li.focus>a>span,
+.subNav>li>ol>li:hover>a>span {
+    color: #000;
+    font-weight: 600;
+}
+
+.subNav>li>ol>li.focus>a>span::before {
+    position: absolute;
+    content: '';
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(237, 55, 93, .2);
+}
+
+.subNav>li>ol>li:hover>a>span::before {
+    position: absolute;
+    content: '';
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    color: rgba(237, 55, 93, .2);
+}
+
+.print_sns_share_box {
+    position: relative;
+    display: flex;
+}
+
+.sns_share_box {}
+
+.btn_print_pr,
+.btn_sns_sh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    text-align: right;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    font-weight: 500;
+    font-size: 14px;
+    color: #202020;
+}
+
+.btn_print_pr {
+    border-right: none;
+}
+
+.btn_print_pr>span {
+    background: url("https://www.pipc.go.kr/np/resources/images/subCommon/icon_print.svg") center 50% no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.btn_sns_sh>span {
+    background: url("https://www.pipc.go.kr/np/resources/images/subCommon/icon_share.svg") center 50% no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.btn_print_pr:hover,
+.btn_sns_sh:hover {
+    color: #FFD800;
+}
+
+.mask_box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+.url_copy_box {
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
+    position: relative;
+    z-index: 99;
+}
+
+.url_copy_box>p {
+    font-size: 12px;
+    color: #122835;
+    line-height: 100%;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+.url_copy_box>.btn_url_copy {
+    display: block;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    background: #122835;
+    border-radius: 5px;
+}
+
+
+@media all and (max-width:1400px) {
+
+    .breadcrumbs {
+        background-color: #fff;
+        margin-bottom: 70px;
+    }
+
+    .subNav {}
+
+    .subNav>li {
+        display: inline-block;
+        line-height: 40px;
+    }
+
+    .subNav>li img {
+        vertical-align: middle;
+    }
+
+    .breadcrumbs>div>ol {
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+    }
+
+    .breadcrumbs>div>ol li {
+        border: 1px solid #ccc;
+        display: inline-block
+    }
+
+    .breadcrumbs>div>ol li a {
+        display: block;
+    }
+
+    .contents {
+        margin: 40px auto;
+    }
+
+    .contentsTitle {
+        width: 100%;
+        border-bottom: 1px solid #333;
+        margin-bottom: 30px;
+    }
+
+    .contentsTitle h3 {
+        display: inline-block;
+        border-bottom: 4px solid #333;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+
+    /*서브 기본폼*/
+
+    .textType1 {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+    }
+
+    .textType1 h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 28px;
+    }
+
+    .textType1>div {
+        margin-bottom: 20px;
+    }
+
+    .textType1>div h4 {
+        font-size: 16px;
+        line-height: 22px;
+        word-break: keep-all;
+    }
+
+    .textType1>div ul>li {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 8px;
+        word-break: keep-all;
+    }
+
+    .textType1>div ul>li:after {
+        top: 10px;
+    }
+
+    .textType1>div ul ol {
+        margin: 5px 5px 5px 10px;
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    /*텍스트 폼 세팅*/
+
+    .noticeBox ul>li {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 8px;
+    }
+
+    .noticeBox ul>li:after {
+        top: 10px;
+    }
+}
+
+@media all and (max-width:1024px) {
+    .breadcrumbs {
+        margin-bottom: 0;
+    }
+
+    .breadcrumbs .guideBox {
+        height: 50px;
+    }
+
+    .btn_print_pr,
+    .btn_sns_sh {
+        height: 50px;
+        border: none;
+    }
+
+    .subNav>li>a {
+        height: 50px;
+    }
+
+    .subNav>li {}
+
+    .subNav>li:first-child {
+        display: block;
+    }
+
+    .scheduleBox__text {
+        width: calc(50% - 5%);
+    }
+
+    .scheduleBox__table {
+        width: 50%;
+    }
+
+    .print_sns_share_box {
+        position: absolute;
+        right: 5px;
+        top: 80px;
+    }
+}
+
+/*태블릿모바일*/
+@media all and (max-width:767px) {
+    .subNav>li {
+        display: none;
+    }
+
+    .print_sns_share_box {
+        position: static;
+    }
+
+    .designBox {
+        margin-bottom: 50px;
+        padding: 152px 20px 20px 20px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .designBoxS {
+        display: block;
+    }
+
+    .scheduleBox__text {
+        width: 100%;
+        display: table;
+        min-height: 60px;
+        background-size: 60px;
+    }
+
+    .scheduleBox__text .text__sTitle {
+        padding-left: 75px;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+
+    .scheduleBox__table {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .designBox2 {
+        padding: 20px;
+    }
+
+    .infoBox {
+        background: url("https://www.pipc.go.kr/np/resources/images/subCommon/infoBoxBg.png") center 20px no-repeat;
+        background-size: 80px;
+    }
+
+    .infoBoxW {
+        background: url("https://www.pipc.go.kr/np/resources/images/subCommon/infoBoxWBg.png") center 20px no-repeat;
+        background-size: 80px;
+    }
+
+    .noticeBox {
+        background: url("https://www.pipc.go.kr/np/resources/images/subCommon/noticeBoxBg.png") center 20px no-repeat;
+        background-size: 80px;
+    }
+
+    .grayBox1,
+    .grayBox2,
+    .grayBox3 {
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /*그레이박스*/
+    .btn1,
+    .btn2 {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    /*버튼세팅*/
+    .pageInfo .satisfaction {
+        padding: 15px;
+    }
+
+    .pageInfo .satisfaction p {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .pageInfo .satisfaction ul {
+        margin-bottom: 4px;
+    }
+
+    .pageInfo .satisfaction ul li {
+        margin-bottom: 0;
+    }
+
+    .pageInfo .satisfaction input[type='radio'] {
+        margin-bottom: 3px;
+        width: 10px;
+    }
+
+    .pageInfo .satisfaction input[type='radio']+label {
+        padding: 0 3px 0 2px;
+        font-size: 12px;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    .pageInfo .satisfaction input[type='text'] {
+        height: 36px;
+        width: 80%;
+    }
+
+    .pageInfo .satisfaction a {
+        height: 36px;
+        line-height: 34px;
+        width: 20%;
+        font-size: 14px;
+    }
+
+    /*페이지인포*/
+    .subTapBasic li {
+        text-align: center;
+        width: 100% !important;
+        border-left: none;
+        border-top: 1px solid #ccc;
+    }
+
+    .subTapBasic li:first-of-type {
+        border-top: none;
+    }
+
+    .subTapBasic li>a {
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+    /*서브탭*/
+    .tableBox {
+        overflow-x: scroll;
+        margin-top: 0;
+    }
+
+    .tableBox p {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .type1 th,
+    .type1 td {
+        padding: 12px 3px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    /*테이블 폼*/
+    .type2 img {
+        display: block;
+        margin: 0 auto;
+        width: 140px;
+        height: 190px;
+    }
+
+    .mobileInfo {
+        display: block;
+        background-color: #f9fcff;
+        border: 1px dashed #dbe8ef;
+        box-sizing: border-box;
+        padding: 18px;
+        font-size: 14px;
+        margin-bottom: 8px !important;
+        margin-top: 10px;
+    }
+
+    /*위원소개*/
+    .subNav>li>ol {
+        top: 44px;
+        left: 0px;
+        box-sizing: border-box;
+    }
+}
+
+/*mobile*/
+@media all and (min-width:768px) and (max-width:1400px) {
+    .subNav>li>ol {
+        top: 44px;
+    }
+}
+
+/*tablet*/
+@media all and (min-width:1241px) {
+    .breadcrumbs {
+        background-color: #fff;
+        margin-bottom: 50px;
+    }
+
+    .breadcrumbs div:after {
+        content: '';
+        display: block;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .subNav {}
+
+    .subNav>li {
+        display: inline-block;
+        line-height: 60px;
+    }
+
+    .subNav>li img {
+        vertical-align: middle;
+    }
+
+    .breadcrumbs div>ol {
+        float: right;
+        border-left: 1px solid #ccc;
+    }
+
+    .breadcrumbs div>ol:after {
+        content: '';
+        display: block;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .breadcrumbs div>ol>li {
+        border-right: 1px solid #ccc;
+        float: left;
+        text-align: center;
+    }
+
+    .breadcrumbs div>ol>li a {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    .breadcrumbs div>ol>li a img {
+        padding-top: 13px;
+        display: inline-block;
+    }
+
+    .contents {
+        margin-bottom: 60px;
+    }
+
+    .contentsTitle {
+        width: 100%;
+        border-bottom: 1px solid #333;
+        margin-bottom: 70px;
+    }
+
+    .contentsTitle h3 {
+        display: inline-block;
+        border-bottom: 4px solid #333;
+        font-size: 36px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+
+    /*서브 기본폼*/
+}
+
+/*pc*/
+@media all and (max-width:560px) {
+    .boardSearch {
+        display: block;
+    }
+}

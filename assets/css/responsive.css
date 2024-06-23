@@ -1,0 +1,840 @@
+
+
+@media screen and (max-width: 1480px) {
+    .container{
+        padding: 0 30px;
+    } 
+    .bottomMenu .container{
+        display: flex;
+        -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bottomMenu__list > ul > li:nth-child(3){
+        margin-right: 1%;
+    }       
+
+}
+@media screen and (max-width: 1290px) {
+    .anchorBox{
+        font-size: 15px;
+    } 
+}
+@media screen and (max-width: 1280px) {
+    .header__memu{
+        margin-right: 0;
+    }
+    .anchorBox{
+        font-size: 14px;
+    }    
+    .bottomMenu__list{
+        max-width: calc(100% - 340px);
+    }
+    .shortCutMenu ul > li{
+        padding-left: 20px;
+    }
+    .snsContents__inner{
+        /* margin-left: 20px;
+        width: calc(33.33% - 14px); */
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .shortCutMenu ul{
+        margin-left: -20px;
+    }
+    .shortCutMenu ul > li{
+        padding-left: 20px;
+    }
+    .notice__list > ul > li{
+       /* width: calc(25% - 15px);
+        margin-left: 20px; */
+    }
+    .infoService__inner > ul.btn3n > li{
+        /* width: calc(50% - 10px); */
+    }   
+    .infoService__inner > ul.btn3n > li:nth-child(3n+1){
+        /* margin-left: 10px; */
+    }
+    .infoService__inner > ul.btn3n > li:nth-child(2n+1){
+        /* margin-left: 0px; */
+    }
+    .anchorBox{
+        font-size: 12px;
+    }
+
+    /* header */
+    .header__top{
+        position: static;
+        padding: 18px 0 15px;
+    }
+    .header__top .logo{
+        width: 174px;
+        height: 38px;
+        margin: 0 auto;
+    }
+    .header__top .logo > a{
+        display: block;
+        float: none;
+        width: 174px;
+        height: 38px;
+        margin: 0 auto;
+        background-size: 100%;
+    }
+    .header__title{
+        display: none;
+    }
+    .header__memu{
+        display: none;
+    }
+    .mobile__menu{
+        display: block;
+    }
+    .btn__menu{
+        position: absolute;
+        top:20px;
+        left:10px;
+        width: 32px;
+        height: 32px;
+        background: url(https://www.pipc.go.kr/np/resources/images/common/i_menu.svg) center 50% no-repeat;
+    }
+    .btn__searchMenu{
+        position: absolute;
+        top:20px;
+        right:10px;
+        width: 32px;
+        height: 32px;
+        background: url(https://www.pipc.go.kr/np/resources/images/common/i_search.svg) center 50% no-repeat; /* */
+    }
+    .header__gnb{
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding-right: 10px;
+        background: rgba(0,0,0,.8);
+        z-index: 2;
+        opacity: 0;
+        transition: .3s;
+        -webkit-transition: .3s;
+        -ms-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    .header__gnb.menuOpen{
+        opacity: 1;
+        -ms-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .mobileTop{
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 60px;
+        padding: 0;
+        background: rgb(148, 97, 255);
+    }
+    .mobileBottom{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        height: 60px;
+        width: calc(100% - 10px);
+        bottom: 0;
+        justify-content: center;
+        border-top: 1px solid #E0E0E0;
+        background: #fff;
+    }
+    .mobileTop .mobileTop__menu{
+        margin-top: 13px;
+    }
+    .mobileTop .mobileTop__menu li{
+        float: left;
+        margin-right: 20px;
+    }
+    .mobileTop .mobileTop__menu li a{
+        color: #fff;
+    }
+    .mobileMene__close{
+        position: absolute;
+        right:10px;
+        top: calc(50% - 20px);
+        width: 40px;
+        height: 40px;
+        background: url(https://www.pipc.go.kr/np/resources/images/common/menuClose.svg) center 50% no-repeat; /* */
+    }
+    .gnb{
+        min-height: calc(100% - 60px);
+        background: #fff url(https://www.pipc.go.kr/np/resources/images/common/menu_bg.png) 0 0 repeat-y;
+    }
+    .navListBox{
+        display: block;
+        overflow: hidden;
+    }
+    .navListBox a.siteNew {
+    	background: url(https://www.pipc.go.kr/np/resources/images/common/outB.png) 95% 5px no-repeat; 
+    	padding-top: 0;
+    }
+    
+    .navListBox > li{
+    	float:none;
+        width: 120px;
+        margin-top: 15px;
+    }
+    .navListBox > li > a{
+        position: relative;
+        width: 100%;
+        display: block;
+        padding-left: 20px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .navListBox > li > a:hover:after, 
+    .navListBox > li > a:focus:after{
+        background: none;
+        text-decoration: underline;
+        display: none;
+    }
+    .navListBox > li.open > a{
+        color: #FFD800;
+        text-decoration: underline;
+    }
+    .navListBox > li.open > .navListArea{
+        display: block;
+    }
+    .navListBox > li.open > a:hover:before, 
+    .navListBox > li.open > a:focus:before{
+        content: '';
+        position: absolute;
+        right: 10px;
+        top: calc(50% - 1px);
+        width: 3px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #FFD800;
+    }
+    .navListBox > li > a:hover:before{
+        content: '';
+        position: absolute;
+        right: 10px;
+        top: calc(50% - 1px);
+        width: 3px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #FFD800;
+    }
+    .navListBox .navListArea{
+        display: none;
+        top: 60px;
+        left: 121px;
+        padding: 0;
+        width: calc(100% - 131px);
+        border: none;
+        background: #fff;
+        height: calc(100% - 120px);
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .gnbList > li{
+        float: none;
+        margin-left: 0;
+        border-bottom: 1px solid #E0E0E0;
+    }
+    .gnbList > li:first-child{
+        margin-top: 0;
+    }
+    .gnbList > li > a{
+        position: relative;
+        justify-content: flex-start;
+        font-size: 16px;
+        height: 40px;
+        padding-left: 18px;
+        margin-right: 15px;
+        border: none !important;
+    }
+    .gnbList > li > a:after{
+        content:'';
+        position: absolute;
+        top: calc(50% - 3px);
+        right:0;
+        width: 10px;
+        height: 6px;
+        background: url("https://www.pipc.go.kr/np/resources/images/common/ico_select_arr.svg") right 50% no-repeat; 
+    }
+    .gnbList > li.active > a:after{
+        transform:rotate(180deg);
+    }
+    .gnbList > li > ol{
+        display: none;
+        margin: 0 0 10px 0;
+    }
+    .gnbList > li > ol > li > a{
+        display: block;
+        position: relative;
+        padding-left: 26px;
+        font-size: 14px;
+        padding-top: 0px;
+        line-height: 1.5;
+    }
+    .gnbList > li > ol > li > a:after{
+        content:'';
+        position: absolute;
+        top:9px;
+        left:18px;
+        width: 4px;
+        height: 1px;
+        background: #303030;
+    }
+    .gnbList > li.active > ol{
+        display: block !important;
+    }
+    .gnbList > li > ol{
+        display: none;
+    }
+    .header__memu.menuOpen{
+        display: block;
+        padding: 15px 10px 10px;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        background: #fff;
+    }
+    .header__memu.menuOpen .header__menu--list,
+    .header__memu.menuOpen .controll__box{
+        display: none;
+    }
+    .header__search{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+    .header__search input[type="text"]{
+        height: 50px;
+    }
+    .btn__searchMenu.open{
+        background: url(https://www.pipc.go.kr/np/resources/images/common/search_close.png) 50% 50% no-repeat
+    }
+
+    /***** sub *****/
+    .header.fixed{
+        height: 71px;
+    }
+    .scrollContents{
+        margin-top: 71px;
+    }
+    .scrollGnb{
+        display: none;
+    }
+    .scrollContents__inner{
+        height: auto !important;
+        padding-top: 0 !important;
+    }
+
+    .pc__only{
+        /* display: none; */
+    }
+    .mobile__only{
+		/* display: block; */
+    }
+    .mobile__only img{
+        width: 100%;
+    }
+
+    /* sub */
+    .subMain{
+        margin-top: 71px;    
+    }
+    .scrollContents__inner .infoBox{
+        top:auto;
+        bottom:0;
+        padding: 40px;
+        max-width: 100%;
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .infoBox .title{
+        font-size: 24px;
+    }
+    .scrollContents__inner .infoBox .title + .title .title__large{
+        font-size: 28px;
+    }
+    
+    
+    
+    /* sub */
+    .subContainer.profile{flex-direction: column; align-items: center;}
+    .profile .leftArea{flex: 1 1 auto; padding: 50px 45px;}
+    .profile .rightArea{flex: 1 1 auto; padding: 70px 20px 30px;}
+    
+    
+    
+    .imgFace{
+        margin: 0 auto;
+    }
+
+    .profile__box{
+        left:-35px;
+        right:auto;
+        bottom:-60px;
+        padding: 30px 30px 35px;
+    }
+    .profile__box .title__large{
+        font-size: 20px;
+        color:white;
+    }
+    .profile__box .title{
+        margin-top: 14px;
+        font-size: 18px;
+    }
+
+    .profile__box .title_bold{
+        margin-top: 14px;
+        font-size: 18px;
+        font-weight: bold;
+    	color:white;
+    }
+    
+    .historyTable table th, .historyTable table td{
+        padding: 5px 0;
+        font-size: 16px;
+    }    
+    .bottomMenu__list > ul > li{
+        width: 25%;
+    }
+    .faqSlidePc{
+        /* display: none; */
+        opacity: 0;
+        height: 0;
+    }
+    .faqSlideM{
+        display: block;
+        opacity: 1;
+        height: auto;
+    }
+    .faqSlideM .slideAnchor{
+        width: calc(100% - 5px);
+    }
+    .notice__list > ul > li.flexWrap .noticeShortCut{
+        width: calc(50% - 10px);
+    }
+    .notice__list > ul > li.flexWrap .noticeShortCut:nth-child(n+3){
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .scrollContents__inner.schedule{
+        background: #fff;
+    }
+    .schedule .subContainer{
+        padding-top: 45px;
+    }
+    .schedule__inner{
+        padding: 35px 0 65px;
+    }
+    .scrollContents__inner.schedule .title{
+        font-size: 20px;
+    }
+    .scheduleTable{
+        padding: 0 20px;
+    }
+    .schedule__select{
+        text-align: center;
+    }
+    .scheduleTable_left{
+        display: none;
+    }
+    .scheduleTable__right{
+        margin-left: 0;
+        width: 100%;
+    }
+    .scheduleWrap{
+        border: 1px solid #aeaeae;
+    }   
+}
+
+/* mobile */
+@media screen and (max-width: 900px) {
+    .container{
+        padding: 0 10px;
+    }
+    .swiper__option .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+        margin-left: 5px;
+    }
+    .swiper__option .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        width: 24px;
+    }
+    .swiper__option .swiper__stop{
+        width: 10px;
+        height: 11px;
+        background-size: 100%;
+    }
+
+    /* .pc__only{
+        display: none;
+    } */
+    
+    /* visual */
+    .mainVisual .swiper-container{
+        padding: 0 10px;
+    }
+    .swiper-slide .figureCaption{
+        padding: 20px;
+        left:0;
+    }
+    .figureCaption.typeB{
+        height: 60px;
+        padding-top: 25px;
+    }
+    .swiper-slide .figureCaption .text__large.text__white,
+    .swiper-slide .figureCaption .text__large{
+        font-size: 20px;
+    }
+    .swiper-slide .figureCaption .text__title.text__white{
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .swiper-slide .figureCaption .text__title{
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    /**/
+    .shortCutMenu{
+        padding: 50px 0 40px;
+    }
+    .shortCutMenu ul{
+        margin-left: -10px;
+    }
+    .shortCutMenu ul > li{
+        margin-bottom: 10px;
+        padding-left: 10px;
+        width: 50%;
+    }
+    .shortCutMenu__top{
+        padding: 15px 0 10px;
+        height: 37px;
+    }
+    .icon__more{
+        display: none;  
+    }
+    .shortCutMenu__inner{
+        padding-top: 19px;
+    }
+    .shortCutMenu__inner .text__mid{
+        margin-top: 7px;
+        height: 40px;
+    }
+    /**/
+    .noticeWrap{
+        padding: 40px 0;
+    }
+    .tab__list{
+        margin-top: 34px;
+        height: 40px;
+    }
+    .tab__list > li .tabAnchor{
+        padding: 4px 11px 0;
+        line-height: 44px;
+        font-size: 16px;
+    }
+    .btn__more{
+        /* display: none;  0628 */
+        top:14px;
+    }
+    .noticeSwiper .swiper__option{
+        opacity: 1;
+    }
+    .tab__wrap .tab__inner{
+        margin-top: 20px;
+    }
+    .notice__header{
+        padding-top: 20px;
+    }
+    .notice__header .text__slarge{
+        font-size: 14px;
+        height: 40px;
+        line-height: 20px;
+    }
+    .notice__innee{
+        padding-top: 7px;
+    }
+    .notice__innee .text__mid{
+        font-size: 14px;
+        height: 40px;
+        line-height: 20px;
+    }
+
+    /* bottomMenu */
+    .bottomMenu{
+        padding: 30px 0 45px;
+    }
+    .bottomMenu__list{
+        float: none;
+        min-width: 100%;
+    }
+    .bottomMenu__list > ul{
+        -webkit-box-pack: center;
+        -ms-flex-pack:center;
+        -webkit-justify-content: center;
+        justify-content:center;
+    }
+    .bottomMenu__list > ul > li{
+        margin-top: 20px;
+    }
+    .bottomMenu__list > ul > li > a > .text__mid{
+        margin-top: 8px;
+        font-size: 18px;
+    }
+    .bottomMenu__slide{
+        float: none;
+        margin: 45px 10px 0;
+        width: calc(100% - 20px);
+    }
+    .icon__m{
+        display: block;
+    }
+    .icon__pc{
+        display: none;
+    }
+    .bottomMenu__list > ul > li > a .icon__m{
+        padding: 0 10px;
+    }
+    .bottomMenu__list > ul > li:nth-child(-n+3){
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .bottomMenu__list > ul > li:nth-child(-n+2) .text__mid{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .shortIcon .icon__pc{
+        display: none;
+    }
+
+    /*
+    .btn__sns:after{
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.7);
+        -webkit-border-radius:50%;
+        border-radius: 50%;
+    }
+    .btn__sns.active:after{
+        background: rgba(0,0,0,0);
+    }
+*/
+    /* faqWrap */
+
+    .sortTab{
+        margin-top: 15px;
+    }
+
+    .sortTab > ul > li{
+        margin: 10px 5px 0 0;
+    }
+    .sortButton{
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+    .faqSlide,
+    .faqSlide .swiper__option{
+        margin-top: 20px;
+    }
+
+    /* .infoService */
+    .infoService{
+        margin-top: 0;
+        padding: 50px 0 20px;
+        border-top: none;
+        background: none;
+    }
+    .infoService__inner{
+        float: none;
+        width: 100%;
+        min-width: 100%;
+    }
+    .infoService__inner.right{
+        margin-top: 40px;
+    }
+    .infoService__inner > ul{
+        margin-top: 15px;
+    }
+    .anchorBox{
+        min-height:40px;
+        line-height: 36px;
+        padding: 2px 0 0;
+        font-size: 12px;
+    }
+    .anchorBox.arrow{
+        padding-left: 10px;
+        text-align: left;
+    }
+    .anchorBox.arrow:after{
+        right:10px;
+    }
+    .hiddenMenu{
+        display: none;
+        bottom:40px;
+    }
+    .hiddenMenu.actived{
+        display: block;
+    }
+
+    
+    /* sub */
+    .infoBox .title{
+        font-size: 20px;
+    }
+    .scrollContents__inner .infoBox .title + .title .title__large{
+        font-size: 24px;
+    }
+    .infoBox__text{
+        margin-top: 24px;
+    }
+    .infoBox__text .text__slarge{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .infoBox .btnswrap{
+        margin-top: 24px;
+    }
+    .infoBox .btnswrap .btn_small{
+        height: 43px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .notice__list > ul > li{
+        width: 428px; 
+        margin-right: 40px;
+    }    
+    .notice__list > ul > li.flexWrap .noticeShortCut{
+        width: calc(50% - 5px);
+    }
+    .bottomMenu .container{
+        display: block;
+    }    
+} /** mobile ens 980 **/
+
+@media screen and (max-width: 767px) {
+
+    
+    .swiper__option .swiper-pagination-bullet{width: 16px; height: 16px; margin-left: 10px;}
+    .swiper__option .swiper-pagination-bullet.swiper-pagination-bullet-active{width: 40px;}
+    .swiper__controll {margin-left: 25px;}
+    .swiper__option .swiper__play, .swiper__option .swiper__stop {width: 16px; height: 16px; background-size:contain;}
+}
+@media screen and (max-width: 680px) {
+    .footer__info .address{
+        word-break: keep-all;
+        line-height: 1.3;
+    }
+    .footer__menu{
+        float: right;
+        margin-left: 0;
+    }
+    .footer__menu > ul > li{
+        margin-top: 4px;
+        margin-left: 20px;
+    }
+    .footer__menu > ul > li > a{
+        font-size: 13px;
+    }
+    .footer__menu > ul > li.siteMap{
+        display: none;
+    }
+
+ 
+    .btn__sns--twitter{
+        margin-left: 0;
+    }
+    .infoService__inner > ul.btn3n > li{
+        width: 50%;
+    }
+    .historyTable + .historyTable th{
+        min-width: 130px;
+    }
+    .scrollContents__inner .infoBox{
+        padding: 20px 10px 30px;
+        background: rgba(0,0,0,.6);
+    }
+    .scrollContents__inner .infoBox .title + .title{
+        margin-top: 10px;
+    }
+    .infoBox__text{
+        margin-top: 12px;
+    }
+    .infoBox__text .text__slarge{
+        margin-top: 10px;
+    }
+    .infoBox .btnswrap{
+        margin-top: 12px;
+    }
+    .subContainer.profile{
+        padding: 0;
+    }
+    .slideAnchor{
+        padding: 15px 10px 20px;
+    }
+    .slideAnchor .text__slarge{font-size: 16px;}
+    .tab__list > li{
+        margin: 0;
+    }
+    .tab__list > li .tabAnchor{
+        padding: 4px 5px;
+    }
+    .btn__more .text__mid{
+        padding-left: 15px;
+        font-size: 13px;
+    }
+    .bottomMenu__list > ul > li > a > .text__mid{
+        font-size: 12px;
+    }    
+}
+
+@media screen and (max-width: 440px) {
+    
+    .btn__more{
+        right:0;
+    }
+    .btn__more .text__mid{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .tab__list > li{
+        margin: 0 5px;
+    }
+    .tab__list > li .tabAnchor{
+        font-size: 14px;
+    }
+    .anchorBox.arrow{
+        padding-left: 4px;
+    }
+    .anchorBox.arrow:after{
+        right: 2px;
+        width: 8px;
+        background-size: 100%;
+    }
+    .shortCutMenu__inner .text__mid{
+        font-size: 12px;
+    }    
+}

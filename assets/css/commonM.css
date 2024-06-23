@@ -1,0 +1,90 @@
+
+
+.container{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+.title__align{
+    position: relative;
+}
+.btn{
+    display:inline-block;
+}
+
+.flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.space_between{
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+}
+.swiper-slide img{
+    width: 100%;
+}
+
+.figureMainBanner > figure{
+	/*max-width:100%; overflow:hidden; aspect-ratio:660/500;*/
+}
+.figureMainBanner> figure>img{
+	width:100%; height:100%; object-fit:fill; image-rendering:-webkit-optimize-contrast; transform:translateZ(0); backface-visibility:hidden;
+}
+
+/* font */
+.bold{
+    font-weight: bold;
+}
+.text__mid{
+    font-size: 16px;
+}
+.text__sTitle{
+    font-size: 18px;
+}
+.text__slarge{
+    font-size: 20px;
+}
+
+.text__large{
+    font-size: 24px;
+}
+.text__title--m{
+    font-size: 30px;
+}
+.text__title{
+    font-size: 36px;
+}
+/* color */
+.text__white{
+    color: #fff;
+}
+.hp_ellipsis {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/* tab */
+[data-tab="tab__contents"]{
+    display: none;
+}
+[data-tab="tab__contents"].tapOpen{
+    display: block;
+}
+
+.mobile__only{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .text__mid{
+        font-size: 14px;
+    }
+    .text__large{
+        font-size: 20px;
+    }
+    .text__title--m{
+        font-size: 22px;
+    }
+}

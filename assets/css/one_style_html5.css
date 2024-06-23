@@ -1,0 +1,90 @@
+.code_push_wrap {
+    height: 20px;
+    margin-top: 10px;
+}
+
+.code_push {
+    float: left;
+}
+
+.code_push a {
+    color: #262626;
+    padding-left: 25px;
+    background: url(/resources/images/common/icon_repush.png) no-repeat left center;
+}
+
+.code_push a:hover {
+    color: #2879ff;
+    background: url(/resources/images/common/icon_repush_ov.png) no-repeat left center;
+}
+
+.code_push a:active {
+    color: #2879ff;
+    background: url(/resources/images/common/icon_repush_ov.png) no-repeat left center;
+}
+
+.code_push a:focus {
+    color: #2879ff;
+    background: url(/resources/images/common/icon_repush_ov.png) no-repeat left center;
+}
+
+.notice_push_wrap {
+    height: 20px;
+    margin-top: 15px;
+    float: left;
+}
+
+.notice_push_wrap_r {
+    height: 20px;
+    margin-top: 15px;
+    float: right;
+}
+
+.notice_push {
+    float: left;
+}
+
+.notice_push a {
+    color: #2879ff;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 20px;
+    background: url(/resources/images/common/icon_notice.png) no-repeat left center;
+    background-size: 14px;
+}
+
+.notice_push a:hover {
+    color: #284d9e;
+    background: url(/resources/images/common/icon_notice_ov.png) no-repeat left center;
+    background-size: 14px;
+}
+
+.notice_push a:active {
+    color: #284d9e;
+    background: url(/resources/images/common/icon_notice_ov.png) no-repeat left center;
+    background-size: 14px;
+}
+
+.notice_push a:focus {
+    color: #284d9e;
+    background: url(/resources/images/common/icon_notice_ov.png) no-repeat left center;
+    background-size: 14px;
+}
+
+/* 셀렉트박스  */
+select {
+    padding-left: 0;
+    font-size: 18px;
+    border: 1px solid #006fff;
+    border-radius: 3px;
+    background: url(/resources/images/common/input_selected.gif) no-repeat 95% 50% !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 40px;
+    line-height: 40px;
+}
+
+select::-ms-expand {
+    display: none;
+}
